@@ -4,21 +4,18 @@ import warnings
 
 import pandas as pd
 
-from promisces.models.matrix import Matrix, Matrices
-from promisces.models.substance import Substance, Substances
+from promisces.models.matrix import Matrix
 
 
 @dtc.dataclass
 class Reference:
     id: str
-    substance: Substance
-    matrix: Matrix
     ref_value_ng_l: float
     year: int
     comments: str
 
     @staticmethod
-    def from_lit(output_matrix: Matrix, substance: Substance) -> "Reference":
+    def from_lit(output_matrix: Matrix, substance) -> "Reference":
         df = pd.read_csv(
             os.path.join("data", "reference_lit.csv"),
             encoding='cp1252',
@@ -38,10 +35,8 @@ class Reference:
             df = next(df.itertuples(index=False))
             return Reference(
                 df.reference_id,
-                getattr(Substances, df.substance_id),
-                getattr(Matrices, df.matrix_id),
                 df.reference_value_ng_l,
                 df.year, df.comments
             )
         # TODO: fake ref?
-        return Reference("dummy", substance, output_matrix, 1, 2024, "Not a true reference")
+        return Reference("dummy", 1, 2024, "Not a true reference")

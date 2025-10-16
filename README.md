@@ -1,6 +1,6 @@
-# promisces.hhea
+# promisces.hhra
 
-Human Health Exposure Assessment (HHEA) for Project PROMISCES
+Human Health Risk Assessment (HHRA) for Project PROMISCES
 
 ## Installation
 
@@ -56,7 +56,7 @@ promisces/
   ...
 ```
 
-> Note: the required data is not part of the git repository and must be requested by emailing malte.zamzow`<at>`kompetenz-wasser.de  
+> Note: the required data is not part of the git repository and must be requested by {{{?}}}  
 
 ## Usage
 

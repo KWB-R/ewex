@@ -1,0 +1,1009 @@
+data_origin;substance_id;matrix_id;min_value_ng_l;max_value_ng_l;point_value_ng_l;reference_id;DOI;Year;comments
+berlin;benzo;rww;16000;40000;;Miehe 2010;;;Tab. 24 Medianwerte
+berlin;cbz;rww;2000;5000;;Miehe 2010;;;VZ Vienna presentation 2023
+berlin;benzo;rww;17000;44000;;Reemtsma et al. 2010;;;Tab. S1 mean values
+germany;14_d;rww;0;1793;833;Stepien et al. 2014;;;mean value
+literature;etfosaa;rww;;;5;B. Boulanger et al., Environ. Sci. Technol. 2005, 39, 5524-5530;10.1021/es050213u;2005;Table 2
+literature;pfhxs;rww;;;8;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 7350-7357;10.1021/es061025m;2006;Table 1
+literature;pfhxs;rww;;;8;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 7350-7357;10.1021/es061025m;2006;Table 1
+literature;pfhxs;rww;;;8;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 7350-7357;10.1021/es061025m;2006;Table 1
+literature;pfos;rww;;;15;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 7350-7357;10.1021/es061025m;2006;Table 1
+literature;pfos;rww;;;15;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 7350-7357;10.1021/es061025m;2006;Table 1
+literature;pfos;rww;;;15;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 7350-7357;10.1021/es061025m;2006;Table 1
+literature;pfds;rww;;;4;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 7350-7357;10.1021/es061025m;2006;Table 1
+literature;pfds;rww;;;4;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 7350-7357;10.1021/es061025m;2006;Table 1
+literature;pfds;rww;;;4;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 7350-7357;10.1021/es061025m;2006;Table 1
+literature;6:2fts;rww;;;8;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 7350-7357;10.1021/es061025m;2006;Table 1
+literature;6:2fts;rww;;;8;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 7350-7357;10.1021/es061025m;2006;Table 1
+literature;6:2fts;rww;;;8;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 7350-7357;10.1021/es061025m;2006;Table 1
+literature;pfhxa;rww;;;19;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 7350-7357;10.1021/es061025m;2006;Table 1
+literature;pfhxa;rww;;;19;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 7350-7357;10.1021/es061025m;2006;Table 1
+literature;pfhxa;rww;;;19;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 7350-7357;10.1021/es061025m;2006;Table 1
+literature;pfoa;rww;;;15;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 7350-7357;10.1021/es061025m;2006;Table 1
+literature;pfoa;rww;;;15;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 7350-7357;10.1021/es061025m;2006;Table 1
+literature;pfoa;rww;;;15;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 7350-7357;10.1021/es061025m;2006;Table 1
+literature;pfda;rww;;;6;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 7350-7357;10.1021/es061025m;2006;Table 1
+literature;pfda;rww;;;6;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 7350-7357;10.1021/es061025m;2006;Table 1
+literature;pfda;rww;;;6;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 7350-7357;10.1021/es061025m;2006;Table 1
+literature;pfhs;rww;;;0;E. Sinclair et al., Environ. Sci. Technol, 2006, 5, 40;10.1021/es051798v;2006;SI
+literature;pfos;rww;;;1;E. Sinclair et al., Environ. Sci. Technol, 2006, 5, 41;10.1021/es051798v;2007;SI
+literature;pfoa;rww;;;8;E. Sinclair et al., Environ. Sci. Technol, 2006, 5, 42;10.1021/es051798v;2008;SI
+literature;pfna;rww;;;2;E. Sinclair et al., Environ. Sci. Technol, 2006, 5, 43;10.1021/es051798v;2009;SI
+literature;pfda;rww;;;0;E. Sinclair et al., Environ. Sci. Technol, 2006, 5, 44;10.1021/es051798v;2010;SI
+literature;pfuda;rww;;;0;E. Sinclair et al., Environ. Sci. Technol, 2006, 5, 45;10.1021/es051798v;2011;SI
+literature;8:2ftca;rww;;;1;E. Sinclair et al., Environ. Sci. Technol, 2006, 5, 46;10.1021/es051798v;2012;SI
+literature;8:2ftuca;rww;;;0;E. Sinclair et al., Environ. Sci. Technol, 2006, 5, 47;10.1021/es051798v;2013;SI
+literature;pfhs;rww;;;0;E. Sinclair et al., Environ. Sci. Technol, 2006, 5, 48;10.1021/es051798v;2014;SI
+literature;pfos;rww;;;1;E. Sinclair et al., Environ. Sci. Technol, 2006, 5, 49;10.1021/es051798v;2015;SI
+literature;pfoa;rww;;;8;E. Sinclair et al., Environ. Sci. Technol, 2006, 5, 50;10.1021/es051798v;2016;SI
+literature;pfna;rww;;;2;E. Sinclair et al., Environ. Sci. Technol, 2006, 5, 51;10.1021/es051798v;2017;SI
+literature;pfda;rww;;;0;E. Sinclair et al., Environ. Sci. Technol, 2006, 5, 52;10.1021/es051798v;2018;SI
+literature;pfuda;rww;;;0;E. Sinclair et al., Environ. Sci. Technol, 2006, 5, 53;10.1021/es051798v;2019;SI
+literature;8:2ftuca;rww;;;0;E. Sinclair et al., Environ. Sci. Technol, 2006, 5, 54;10.1021/es051798v;2020;SI
+literature;pfhs;rww;;;0;E. Sinclair et al., Environ. Sci. Technol, 2006, 5, 55;10.1021/es051798v;2021;SI
+literature;pfos;rww;;;0;E. Sinclair et al., Environ. Sci. Technol, 2006, 5, 56;10.1021/es051798v;2022;SI
+literature;pfoa;rww;;;5;E. Sinclair et al., Environ. Sci. Technol, 2006, 5, 57;10.1021/es051798v;2023;SI
+literature;pfna;rww;;;0;E. Sinclair et al., Environ. Sci. Technol, 2006, 5, 58;10.1021/es051798v;2024;SI
+literature;pfhs;rww;;;0;E. Sinclair et al., Environ. Sci. Technol, 2006, 5, 59;10.1021/es051798v;2025;SI
+literature;pfos;rww;;;0;E. Sinclair et al., Environ. Sci. Technol, 2006, 5, 60;10.1021/es051798v;2026;SI
+literature;pfoa;rww;;;5;E. Sinclair et al., Environ. Sci. Technol, 2006, 5, 61;10.1021/es051798v;2027;SI
+literature;pfna;rww;;;0;E. Sinclair et al., Environ. Sci. Technol, 2006, 5, 62;10.1021/es051798v;2028;SI
+literature;pfbs;rww;;;5;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfhxs;rww;;;9;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfos;rww;;;21;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;6:2fts;rww;;;31;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfoa;rww;;;13;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfna;rww;;;1;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfbs;rww;;;27;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfhxs;rww;;;9;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfos;rww;;;400;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;6:2fts;rww;;;38;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfhpa;rww;;;7;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfoa;rww;;;16;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfna;rww;;;5;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfda;rww;;;1;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfbs;rww;;;5;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfhxs;rww;;;2;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfos;rww;;;20;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;6:2fts;rww;;;2;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfhxa;rww;;;11;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfoa;rww;;;7;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfna;rww;;;7;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfbs;rww;;;7;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfhxs;rww;;;11;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfos;rww;;;26;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;6:2fts;rww;;;57;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfhxa;rww;;;9;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfhpa;rww;;;15;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfoa;rww;;;89;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfna;rww;;;5;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfbs;rww;;;3;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfhxs;rww;;;11;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfos;rww;;;12;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;6:2fts;rww;;;12;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfhxa;rww;;;8;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfhpa;rww;;;1;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfoa;rww;;;5;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;fosa;rww;;;6;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfbs;hww;;;0;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfhxs;hww;;;6;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfos;hww;;;12;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;6:2fts;hww;;;0;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfhxa;hww;;;11;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfhpa;hww;;;7;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfoa;hww;;;29;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfda;hww;;;2;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfos;iww;;;14;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfds;iww;;;10;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;6:2fts;iww;;;9;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfhxa;iww;;;23;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfhpa;iww;;;1;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfhxs;hwwt;;;8;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfos;hwwt;;;13;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;6:2fts;hwwt;;;9;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfhxa;hwwt;;;13;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfoa;hwwt;;;9;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfbs;hwwt;;;0;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfhxs;hwwt;;;6;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfos;hwwt;;;27;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;6:2fts;hwwt;;;16;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfhxa;hwwt;;;17;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfoa;hwwt;;;13;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfbs;rww;;;6;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfhxs;rww;;;12;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfos;rww;;;1;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfhxa;rww;;;20;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfhpa;rww;;;25;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfoa;rww;;;49;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfna;rww;;;7;M. M. Schultz, Environ. Sci. Technol. 2006, 40, 289-295;10.1021/es051381p;2006;Table 3
+literature;pfbs;rww;;;4;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6377;10.1021/es703062f;2008;Table 2
+literature;pfhxs;rww;;;1;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6378;10.1021/es703062f;2008;Table 2
+literature;pfos;rww;;;71;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6379;10.1021/es703062f;2008;Table 2
+literature;6:2fts;rww;;;2;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6380;10.1021/es703062f;2008;Table 2
+literature;pfhpa;rww;;;16;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6381;10.1021/es703062f;2008;Table 2
+literature;pfoa;rww;;;5;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6382;10.1021/es703062f;2008;Table 2
+literature;pfbs;rww;;;3;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6383;10.1021/es703062f;2008;Table 2
+literature;pfhxs;rww;;;12;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6384;10.1021/es703062f;2008;Table 2
+literature;pfos;rww;;;18;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6385;10.1021/es703062f;2008;Table 2
+literature;6:2fts;rww;;;7;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6386;10.1021/es703062f;2008;Table 2
+literature;pfhpa;rww;;;7;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6387;10.1021/es703062f;2008;Table 2
+literature;pfoa;rww;;;5;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6388;10.1021/es703062f;2008;Table 2
+literature;pfda;rww;;;2;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6389;10.1021/es703062f;2008;Table 2
+literature;pfbs;rww;;;6;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6390;10.1021/es703062f;2008;Table 2
+literature;pfhxs;rww;;;45;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6391;10.1021/es703062f;2008;Table 2
+literature;pfos;rww;;;449;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6392;10.1021/es703062f;2008;Table 2
+literature;6:2fts;rww;;;7;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6393;10.1021/es703062f;2008;Table 2
+literature;fosa;rww;;;3;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6394;10.1021/es703062f;2008;Table 2
+literature;pfhxa;rww;;;1;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6395;10.1021/es703062f;2008;Table 2
+literature;pfhpa;rww;;;1;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6396;10.1021/es703062f;2008;Table 2
+literature;pfoa;rww;;;35;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6397;10.1021/es703062f;2008;Table 2
+literature;pfna;rww;;;5;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6398;10.1021/es703062f;2008;Table 2
+literature;pfbs;rww;;;7;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6399;10.1021/es703062f;2008;Table 2
+literature;pfhxs;rww;;;54;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6400;10.1021/es703062f;2008;Table 2
+literature;pfos;rww;;;134;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6401;10.1021/es703062f;2008;Table 2
+literature;pfds;rww;;;36;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6401;10.1021/es703062f;2008;Table 2
+literature;6:2fts;rww;;;4;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6402;10.1021/es703062f;2008;Table 2
+literature;fosa;rww;;;5;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6403;10.1021/es703062f;2008;Table 2
+literature;pfhpa;rww;;;2;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6404;10.1021/es703062f;2008;Table 2
+literature;pfoa;rww;;;25;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6405;10.1021/es703062f;2008;Table 2
+literature;pfbs;rww;;;1;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6406;10.1021/es703062f;2008;Table 2
+literature;pfhxs;rww;;;10;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6407;10.1021/es703062f;2008;Table 2
+literature;pfos;rww;;;76;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6408;10.1021/es703062f;2008;Table 2
+literature;6:2fts;rww;;;3;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6409;10.1021/es703062f;2008;Table 2
+literature;pfhxa;rww;;;1;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6410;10.1021/es703062f;2008;Table 2
+literature;pfhpa;rww;;;2;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6411;10.1021/es703062f;2008;Table 2
+literature;pfoa;rww;;;9;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6412;10.1021/es703062f;2008;Table 2
+literature;pfda;rww;;;2;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6413;10.1021/es703062f;2008;Table 2
+literature;pfbs;rww;;;1;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6414;10.1021/es703062f;2008;Table 2
+literature;pfhxs;rww;;;5;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6415;10.1021/es703062f;2008;Table 2
+literature;pfos;rww;;;33;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6416;10.1021/es703062f;2008;Table 2
+literature;6:2fts;rww;;;7;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6417;10.1021/es703062f;2008;Table 2
+literature;pfhpa;rww;;;10;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6418;10.1021/es703062f;2008;Table 2
+literature;pfoa;rww;;;9;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6419;10.1021/es703062f;2008;Table 2
+literature;pfhxs;rww;;;16;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6420;10.1021/es703062f;2008;Table 2
+literature;pfos;rww;;;117;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6421;10.1021/es703062f;2008;Table 2
+literature;pfds;rww;;;160;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6422;10.1021/es703062f;2008;Table 2
+literature;6:2fts;rww;;;7;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6423;10.1021/es703062f;2008;Table 2
+literature;pfhpa;rww;;;1;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6424;10.1021/es703062f;2008;Table 2
+literature;pfoa;rww;;;9;C.A. Huset et al., Environ. Sci. Technol. 2008, 42, 6369-6425;10.1021/es703062f;2008;Table 2
+literature;pfos;hwwt;;;7;R. Bossi et al, Environment International 34 (2008) 443-450 ;10.1016/j.envint.2007.10.002;2008;Table 3
+literature;pfhxs;hwwt;;;17;R. Bossi et al, Environment International 34 (2008) 443-450 ;10.1016/j.envint.2007.10.002;2008;Table 3
+literature;pfoa;hwwt;;;20;R. Bossi et al, Environment International 34 (2008) 443-450 ;10.1016/j.envint.2007.10.002;2008;Table 3
+literature;pfna;hwwt;;;2;R. Bossi et al, Environment International 34 (2008) 443-450 ;10.1016/j.envint.2007.10.002;2008;Table 3
+literature;pfos;hwwt;;;2;R. Bossi et al, Environment International 34 (2008) 443-450 ;10.1016/j.envint.2007.10.002;2008;Table 3
+literature;pfhxs;hwwt;;;14;R. Bossi et al, Environment International 34 (2008) 443-450 ;10.1016/j.envint.2007.10.002;2008;Table 3
+literature;pfna;hwwt;;;2;R. Bossi et al, Environment International 34 (2008) 443-450 ;10.1016/j.envint.2007.10.002;2008;Table 3
+literature;pfos;hwwt;;;5;R. Bossi et al, Environment International 34 (2008) 443-450 ;10.1016/j.envint.2007.10.002;2008;Table 3
+literature;pfhxs;hwwt;;;3;R. Bossi et al, Environment International 34 (2008) 443-450 ;10.1016/j.envint.2007.10.002;2008;Table 3
+literature;pfoa;hwwt;;;15;R. Bossi et al, Environment International 34 (2008) 443-450 ;10.1016/j.envint.2007.10.002;2008;Table 3
+literature;pfna;hwwt;;;1;R. Bossi et al, Environment International 34 (2008) 443-450 ;10.1016/j.envint.2007.10.002;2008;Table 3
+literature;pfos;hwwt;;;7;R. Bossi et al, Environment International 34 (2008) 443-450 ;10.1016/j.envint.2007.10.002;2008;Table 3
+literature;pfhxs;hwwt;;;4;R. Bossi et al, Environment International 34 (2008) 443-450 ;10.1016/j.envint.2007.10.002;2008;Table 3
+literature;pfoa;hwwt;;;1;R. Bossi et al, Environment International 34 (2008) 443-450 ;10.1016/j.envint.2007.10.002;2008;Table 3
+literature;pfna;hwwt;;;3;R. Bossi et al, Environment International 34 (2008) 443-450 ;10.1016/j.envint.2007.10.002;2008;Table 3
+literature;pfos;hwwt;;;2;R. Bossi et al, Environment International 34 (2008) 443-450 ;10.1016/j.envint.2007.10.002;2008;Table 3
+literature;pfhxs;hwwt;;;7;R. Bossi et al, Environment International 34 (2008) 443-450 ;10.1016/j.envint.2007.10.002;2008;Table 3
+literature;pfoa;hwwt;;;6;R. Bossi et al, Environment International 34 (2008) 443-450 ;10.1016/j.envint.2007.10.002;2008;Table 3
+literature;pfna;hwwt;;;3;R. Bossi et al, Environment International 34 (2008) 443-450 ;10.1016/j.envint.2007.10.002;2008;Table 3
+literature;pfos;hwwt;;;14;J. Yu et al.,water research 43 (2009) 2399-2408 ;10.1016/j.watres.2009.03.009;2009;Tables 2-3-4
+literature;pfoa;hwwt;;;16;J. Yu et al.,water research 43 (2009) 2399-2408 ;10.1016/j.watres.2009.03.009;2009;Tables 2-3-4
+literature;pfos;hwwt;;;16;J. Yu et al.,water research 43 (2009) 2399-2408 ;10.1016/j.watres.2009.03.009;2009;Tables 2-3-4
+literature;pfoa;hwwt;;;11;J. Yu et al.,water research 43 (2009) 2399-2408 ;10.1016/j.watres.2009.03.009;2009;Tables 2-3-4
+literature;pfos;hwwt;;;25;J. Yu et al.,water research 43 (2009) 2399-2408 ;10.1016/j.watres.2009.03.009;2009;Tables 2-3-4
+literature;pfoa;hwwt;;;26;J. Yu et al.,water research 43 (2009) 2399-2408 ;10.1016/j.watres.2009.03.009;2009;Tables 2-3-4
+literature;pfos;hwwt;;;23;J. Yu et al.,water research 43 (2009) 2399-2408 ;10.1016/j.watres.2009.03.009;2009;Tables 2-3-4
+literature;pfoa;hwwt;;;8;J. Yu et al.,water research 43 (2009) 2399-2408 ;10.1016/j.watres.2009.03.009;2009;Tables 2-3-4
+literature;pfos;hwwt;;;15;J. Yu et al.,water research 43 (2009) 2399-2408 ;10.1016/j.watres.2009.03.009;2009;Tables 2-3-4
+literature;pfoa;hwwt;;;21;J. Yu et al.,water research 43 (2009) 2399-2408 ;10.1016/j.watres.2009.03.009;2009;Tables 2-3-4
+literature;pfos;hwwt;;;12;J. Yu et al.,water research 43 (2009) 2399-2408 ;10.1016/j.watres.2009.03.009;2009;Tables 2-3-4
+literature;pfoa;hwwt;;;17;J. Yu et al.,water research 43 (2009) 2399-2408 ;10.1016/j.watres.2009.03.009;2009;Tables 2-3-4
+literature;pfos;hwwt;;;194;J. Yu et al.,water research 43 (2009) 2399-2408 ;10.1016/j.watres.2009.03.009;2009;Tables 2-3-4
+literature;pfoa;hwwt;;;57;J. Yu et al.,water research 43 (2009) 2399-2408 ;10.1016/j.watres.2009.03.009;2009;Tables 2-3-4
+literature;pfos;hwwt;;;215;J. Yu et al.,water research 43 (2009) 2399-2408 ;10.1016/j.watres.2009.03.009;2009;Tables 2-3-4
+literature;pfoa;hwwt;;;41;J. Yu et al.,water research 43 (2009) 2399-2408 ;10.1016/j.watres.2009.03.009;2009;Tables 2-3-4
+literature;pfos;hwwt;;;376;J. Yu et al.,water research 43 (2009) 2399-2408 ;10.1016/j.watres.2009.03.009;2009;Tables 2-3-4
+literature;pfoa;hwwt;;;89;J. Yu et al.,water research 43 (2009) 2399-2408 ;10.1016/j.watres.2009.03.009;2009;Tables 2-3-4
+literature;pfos;hwwt;;;214;J. Yu et al.,water research 43 (2009) 2399-2408 ;10.1016/j.watres.2009.03.009;2009;Tables 2-3-4
+literature;pfoa;hwwt;;;18;J. Yu et al.,water research 43 (2009) 2399-2408 ;10.1016/j.watres.2009.03.009;2009;Tables 2-3-4
+literature;pfhxa;hwwt;;;6;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028 ;2010;Table 3 
+literature;pfhpa;hwwt;;;7;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfoa;hwwt;;;11;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfna;hwwt;;;1;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhps;hwwt;;;8;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfos;hwwt;;;3;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028 ;2010;Table 3 
+literature;pfhxa;hwwt;;;5;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhpa;hwwt;;;3;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfoa;hwwt;;;11;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhxs;hwwt;;;5;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfos;hwwt;;;3;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028 ;2010;Table 3 
+literature;pfhxa;hwwt;;;2;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhpa;hwwt;;;1;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfoa;hwwt;;;11;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfna;hwwt;;;1;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfda;hwwt;;;1;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028 ;2010;Table 3 
+literature;pfhxs;hwwt;;;1;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfos;hwwt;;;1;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfoa;hwwt;;;5;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfna;hwwt;;;1;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfda;hwwt;;;1;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028 ;2010;Table 3 
+literature;pfhxs;hwwt;;;5;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhpa;hwwt;;;2;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfoa;hwwt;;;6;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfna;hwwt;;;12;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfda;hwwt;;;1;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028 ;2010;Table 3 
+literature;pfos;hwwt;;;2;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhxa;hwwt;;;4;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhpa;hwwt;;;2;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfoa;hwwt;;;12;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfna;hwwt;;;2;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028 ;2010;Table 3 
+literature;pfda;hwwt;;;1;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhxa;hwwt;;;2;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhpa;hwwt;;;3;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfoa;hwwt;;;7;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfna;hwwt;;;1;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028 ;2010;Table 3 
+literature;pfda;hwwt;;;1;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfos;hwwt;;;3;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhxa;hwwt;;;4;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfoa;hwwt;;;9;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028 ;2010;Table 3 
+literature;pfna;hwwt;;;2;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfda;hwwt;;;1;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfos;hwwt;;;2;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhxa;hwwt;;;4;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfoa;hwwt;;;12;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028 ;2010;Table 3 
+literature;pfna;hwwt;;;2;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfda;hwwt;;;1;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfos;hwwt;;;3;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhxa;hwwt;;;5;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhpa;hwwt;;;4;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028 ;2010;Table 3 
+literature;pfoa;hwwt;;;21;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfna;hwwt;;;3;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfda;hwwt;;;2;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhxs;hwwt;;;9;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhps;hwwt;;;1;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028 ;2010;Table 3 
+literature;pfos;hwwt;;;6;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhxa;rww;;;13;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhpa;rww;;;12;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfoa;rww;;;37;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfna;rww;;;19;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028 ;2010;Table 3 
+literature;pfda;rww;;;5;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfuda;rww;;;1;R. Guo et al.,water research 44 (2010) 3476e3487;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhxs;rww;;;5;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfos;rww;;;40;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhxa;lww;;;2;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfoa;lww;;;8;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028 ;2010;Table 3 
+literature;pfna;lww;;;1;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfos;lww;;;2;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhxa;hwwt;;;6;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhpa;hwwt;;;2;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfoa;hwwt;;;6;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028 ;2010;Table 3 
+literature;pfhxs;hwwt;;;23;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhps;hwwt;;;2;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfos;hwwt;;;13;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhxa;hwwt;;;3;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfoa;hwwt;;;3;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhxs;hwwt;;;10;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfos;hwwt;;;3;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028 ;2010;Table 3 
+literature;pfoa;hwwt;;;2;R. Guo et al.,water research 44 (2010) 3476e3486 ;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhxs;hwwt;;;2;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfos;hwwt;;;3;R. Guo et al.,water research 44 (2010) 3476e3486;10.1016/j.watres.2010.03.028;2010;Table 3 
+literature;pfhxa;hwwt;;;24;H. Sun et al., water research 45 (2011) 4483e4490;10.1016/j.watres.2011.05.036;2011;Table 3
+literature;pfhpa;hwwt;;;18;H. Sun et al., water research 45 (2011) 4483e4490;10.1016/j.watres.2011.05.036;2011;Table 3
+literature;pfoa;hwwt;;;27;H. Sun et al., water research 45 (2011) 4483e4490;10.1016/j.watres.2011.05.036;2011;Table 3
+literature;pfhxs;hwwt;;;8;H. Sun et al., water research 45 (2011) 4483e4490;10.1016/j.watres.2011.05.036;2011;Table 3
+literature;pfos;hwwt;;;5;H. Sun et al., water research 45 (2011) 4483e4490;10.1016/j.watres.2011.05.036;2011;Table 3
+literature;pfhxa;hwwt;;;33;H. Sun et al., water research 45 (2011) 4483e4490;10.1016/j.watres.2011.05.036;2011;Table 3
+literature;pfhpa;hwwt;;;3;H. Sun et al., water research 45 (2011) 4483e4490;10.1016/j.watres.2011.05.036;2011;Table 3
+literature;pfoa;hwwt;;;35;H. Sun et al., water research 45 (2011) 4483e4490;10.1016/j.watres.2011.05.036;2011;Table 3
+literature;pfos;hwwt;;;6;H. Sun et al., water research 45 (2011) 4483e4490;10.1016/j.watres.2011.05.036;2011;Table 3
+literature;pfhxa;hwwt;;;16;H. Sun et al., water research 45 (2011) 4483e4490;10.1016/j.watres.2011.05.036;2011;Table 3
+literature;pfhpa;hwwt;;;6;H. Sun et al., water research 45 (2011) 4483e4490;10.1016/j.watres.2011.05.036;2011;Table 3
+literature;pfoa;hwwt;;;71;H. Sun et al., water research 45 (2011) 4483e4490;10.1016/j.watres.2011.05.036;2011;Table 3
+literature;pfos;hwwt;;;13;H. Sun et al., water research 45 (2011) 4483e4490;10.1016/j.watres.2011.05.036;2011;Table 3
+literature;pfhxa;hwwt;;;16;H. Sun et al., water research 45 (2011) 4483e4490;10.1016/j.watres.2011.05.036;2011;Table 3
+literature;pfhpa;hwwt;;;3;H. Sun et al., water research 45 (2011) 4483e4490;10.1016/j.watres.2011.05.036;2011;Table 3
+literature;pfoa;hwwt;;;26;H. Sun et al., water research 45 (2011) 4483e4490;10.1016/j.watres.2011.05.036;2011;Table 3
+literature;pfos;hwwt;;;3;H. Sun et al., water research 45 (2011) 4483e4490;10.1016/j.watres.2011.05.036;2011;Table 3
+literature;pfpa;iww;;;14;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfhxa;iww;;;70;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfhpa;iww;;;32;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfoa;iww;;;142;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfna;iww;;;15;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfda;iww;;;63;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfuna;iww;;;3;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfdoa;iww;;;10;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfhxs;iww;;;32;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfos;iww;;;465;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfpa;iww;;;1;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfhxa;iww;;;0;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfhpa;iww;;;1;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfoa;iww;;;7;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfna;iww;;;175;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfda;iww;;;1;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfuna;iww;;;82;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfdoa;iww;;;1;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfhxs;iww;;;26;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfos;iww;;;381;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfpa;iww;;;1;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfhxa;iww;;;0;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfhpa;iww;;;1;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfoa;iww;;;7;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfna;iww;;;175;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfda;iww;;;1;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfuna;iww;;;82;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfhxs;iww;;;26;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfos;iww;;;381;C. Kunacheva et al., Chemosphere 83 (2011) 737-744;10.1016/j.chemosphere.2011.02.059;2011;Table 3
+literature;pfhxa;hww;;;41;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfhpa;hww;;;5;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfoa;hww;;;30;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfna;hww;;;4;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfda;hww;;;3;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfunda;hww;;;1;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfbs;hww;;;7;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfhxs;hww;;;7;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfos;hww;;;9;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfhxa;iww;;;160;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfhpa;iww;;;27;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfoa;iww;;;62;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfna;iww;;;10;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfda;iww;;;11;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfunda;iww;;;3;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfbs;iww;;;110;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfhxs;iww;;;98;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfos;iww;;;110;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfhxa;rww;;;270;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfhpa;rww;;;58;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfoa;rww;;;550;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfna;rww;;;20;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfda;rww;;;27;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfunda;rww;;;3;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfdoda;rww;;;1;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfbs;rww;;;37;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfhxs;rww;;;9;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfos;rww;;;89;S. K. Kim et al., Journal of Hazardous Materials 82 (2012) 91, 201;10.1016/j.jhazmat.2011.11.036;2012;SI
+literature;pfpea;rww;;;27;O.S.Arvaniti, Journal of Hazardous Materials 239-240 (2012), 24-31;10.1016/j.jhazmat.2012.02.015;2012;Table2
+literature;pfhxa;rww;;;2;O.S.Arvaniti, Journal of Hazardous Materials 239-240 (2012), 24-31;10.1016/j.jhazmat.2012.02.015;2012;Table2
+literature;pfhpa;rww;;;2;O.S.Arvaniti, Journal of Hazardous Materials 239-240 (2012), 24-31;10.1016/j.jhazmat.2012.02.015;2012;Table2
+literature;pfoa;rww;;;17;O.S.Arvaniti, Journal of Hazardous Materials 239-240 (2012), 24-31;10.1016/j.jhazmat.2012.02.015;2012;Table2
+literature;pfna;rww;;;3;O.S.Arvaniti, Journal of Hazardous Materials 239-240 (2012), 24-31;10.1016/j.jhazmat.2012.02.015;2012;Table2
+literature;pfda;rww;;;3;O.S.Arvaniti, Journal of Hazardous Materials 239-240 (2012), 24-31;10.1016/j.jhazmat.2012.02.015;2012;Table2
+literature;pfuda;rww;;;9;O.S.Arvaniti, Journal of Hazardous Materials 239-240 (2012), 24-31;10.1016/j.jhazmat.2012.02.015;2012;Table2
+literature;pfdoa;rww;;;7;O.S.Arvaniti, Journal of Hazardous Materials 239-240 (2012), 24-31;10.1016/j.jhazmat.2012.02.015;2012;Table2
+literature;pftrda;rww;;;11;O.S.Arvaniti, Journal of Hazardous Materials 239-240 (2012), 24-31;10.1016/j.jhazmat.2012.02.015;2012;Table2
+literature;pfteda;rww;;;19;O.S.Arvaniti, Journal of Hazardous Materials 239-240 (2012), 24-31;10.1016/j.jhazmat.2012.02.015;2012;Table2
+literature;pfhxs;rww;;;16;O.S.Arvaniti, Journal of Hazardous Materials 239-240 (2012), 24-31;10.1016/j.jhazmat.2012.02.015;2012;Table2
+literature;pfos;rww;;;13;O.S.Arvaniti, Journal of Hazardous Materials 239-240 (2012), 24-31;10.1016/j.jhazmat.2012.02.015;2012;Table2
+literature;pfds;rww;;;2;O.S.Arvaniti, Journal of Hazardous Materials 239-240 (2012), 24-31;10.1016/j.jhazmat.2012.02.015;2012;Table2
+literature;pfosa;rww;;;2;O.S.Arvaniti, Journal of Hazardous Materials 239-240 (2012), 24-31;10.1016/j.jhazmat.2012.02.015;2012;Table2
+literature;pfpea;rww;;;25;O.S.Arvaniti, Journal of Hazardous Materials 239-240 (2012), 24-31;10.1016/j.jhazmat.2012.02.015;2012;Table2
+literature;pfhpa;rww;;;1;O.S.Arvaniti, Journal of Hazardous Materials 239-240 (2012), 24-31;10.1016/j.jhazmat.2012.02.015;2012;Table2
+literature;pfoa;rww;;;4;O.S.Arvaniti, Journal of Hazardous Materials 239-240 (2012), 24-31;10.1016/j.jhazmat.2012.02.015;2012;Table2
+literature;pfuda;rww;;;9;O.S.Arvaniti, Journal of Hazardous Materials 239-240 (2012), 24-31;10.1016/j.jhazmat.2012.02.015;2012;Table2
+literature;pfhxs;rww;;;7;O.S.Arvaniti, Journal of Hazardous Materials 239-240 (2012), 24-31;10.1016/j.jhazmat.2012.02.015;2012;Table2
+literature;pfhps;rww;;;3;O.S.Arvaniti, Journal of Hazardous Materials 239-240 (2012), 24-31;10.1016/j.jhazmat.2012.02.015;2012;Table2
+literature;pfos;rww;;;4;O.S.Arvaniti, Journal of Hazardous Materials 239-240 (2012), 24-31;10.1016/j.jhazmat.2012.02.015;2012;Table2
+literature;pfds;rww;;;18;O.S.Arvaniti, Journal of Hazardous Materials 239-240 (2012), 24-31;10.1016/j.jhazmat.2012.02.015;2012;Table2
+literature;pfosa;rww;;;2;O.S.Arvaniti, Journal of Hazardous Materials 239-240 (2012), 24-31;10.1016/j.jhazmat.2012.02.015;2012;Table2
+literature;pfos ;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e17;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e18;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e19;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;7;W. Zhang et al., Environmental Pollution 176 (2013) 10e20;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e21;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e22;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e23;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e24;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e25;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e26;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e27;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e28;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e29;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e30;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e31;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e32;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e33;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e34;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e35;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;6;W. Zhang et al., Environmental Pollution 176 (2013) 10e36;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e37;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e38;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e39;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e40;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e41;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e42;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e43;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e44;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e45;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e46;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e47;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e48;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e49;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e50;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e51;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e52;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e53;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e54;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e55;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e56;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e57;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e58;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e59;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e60;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;6;W. Zhang et al., Environmental Pollution 176 (2013) 10e61;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e62;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e63;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e64;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e65;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e66;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e67;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e68;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e69;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e70;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e71;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e72;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e73;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e74;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e75;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e76;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e77;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e78;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;4;W. Zhang et al., Environmental Pollution 176 (2013) 10e79;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e80;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;10;W. Zhang et al., Environmental Pollution 176 (2013) 10e81;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e82;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e83;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;6;W. Zhang et al., Environmental Pollution 176 (2013) 10e84;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e85;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e86;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e87;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e88;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e89;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e90;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;7;W. Zhang et al., Environmental Pollution 176 (2013) 10e91;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e92;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;4;W. Zhang et al., Environmental Pollution 176 (2013) 10e93;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e94;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;4;W. Zhang et al., Environmental Pollution 176 (2013) 10e95;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e96;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e97;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e98;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e99;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;6;W. Zhang et al., Environmental Pollution 176 (2013) 10e100;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e101;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e102;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e103;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e104;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e105;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e106;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;8;W. Zhang et al., Environmental Pollution 176 (2013) 10e107;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e108;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e109;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e110;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;4;W. Zhang et al., Environmental Pollution 176 (2013) 10e111;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e113;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e114;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e115;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;7;W. Zhang et al., Environmental Pollution 176 (2013) 10e116;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e117;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e118;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e119;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e120;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e121;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e122;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e123;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e124;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e125;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e126;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e127;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e128;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e129;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e130;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e131;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;6;W. Zhang et al., Environmental Pollution 176 (2013) 10e132;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e133;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e134;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e135;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e136;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e137;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e138;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e139;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e140;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e141;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e142;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e143;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e144;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e145;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e146;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e147;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e148;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e149;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e150;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e151;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e152;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e153;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e154;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e155;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e156;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;6;W. Zhang et al., Environmental Pollution 176 (2013) 10e157;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e158;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e159;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e160;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e161;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e162;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e163;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e164;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e165;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e166;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e167;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e168;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e169;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e170;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e171;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e172;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e173;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e174;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;4;W. Zhang et al., Environmental Pollution 176 (2013) 10e175;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e176;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;10;W. Zhang et al., Environmental Pollution 176 (2013) 10e177;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e178;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e179;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;6;W. Zhang et al., Environmental Pollution 176 (2013) 10e180;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e181;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e182;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e183;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e184;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e185;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e186;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;7;W. Zhang et al., Environmental Pollution 176 (2013) 10e187;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e188;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;4;W. Zhang et al., Environmental Pollution 176 (2013) 10e189;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e190;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;4;W. Zhang et al., Environmental Pollution 176 (2013) 10e191;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e192;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e193;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e194;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e195;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;6;W. Zhang et al., Environmental Pollution 176 (2013) 10e196;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e197;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e198;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e199;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e200;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e201;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e202;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;8;W. Zhang et al., Environmental Pollution 176 (2013) 10e203;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e204;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e205;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e206;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;4;W. Zhang et al., Environmental Pollution 176 (2013) 10e207;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;33;W. Zhang et al., Environmental Pollution 176 (2013) 10e208;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;7;W. Zhang et al., Environmental Pollution 176 (2013) 10e209;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;6;W. Zhang et al., Environmental Pollution 176 (2013) 10e210;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e211;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;7;W. Zhang et al., Environmental Pollution 176 (2013) 10e212;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e213;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e214;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e215;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e216;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e217;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e218;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;91;W. Zhang et al., Environmental Pollution 176 (2013) 10e219;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;7;W. Zhang et al., Environmental Pollution 176 (2013) 10e220;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;68;W. Zhang et al., Environmental Pollution 176 (2013) 10e221;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;7;W. Zhang et al., Environmental Pollution 176 (2013) 10e222;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;18;W. Zhang et al., Environmental Pollution 176 (2013) 10e223;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;34;W. Zhang et al., Environmental Pollution 176 (2013) 10e224;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;7;W. Zhang et al., Environmental Pollution 176 (2013) 10e225;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;6;W. Zhang et al., Environmental Pollution 176 (2013) 10e226;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e227;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;6;W. Zhang et al., Environmental Pollution 176 (2013) 10e228;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e229;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e230;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e231;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e232;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e233;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;4;W. Zhang et al., Environmental Pollution 176 (2013) 10e234;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;58;W. Zhang et al., Environmental Pollution 176 (2013) 10e235;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;4;W. Zhang et al., Environmental Pollution 176 (2013) 10e236;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;67;W. Zhang et al., Environmental Pollution 176 (2013) 10e237;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;8;W. Zhang et al., Environmental Pollution 176 (2013) 10e238;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;19;W. Zhang et al., Environmental Pollution 176 (2013) 10e239;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;41;W. Zhang et al., Environmental Pollution 176 (2013) 10e240;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;14;W. Zhang et al., Environmental Pollution 176 (2013) 10e241;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e242;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e243;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;11;W. Zhang et al., Environmental Pollution 176 (2013) 10e244;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e245;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e246;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e247;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e248;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e249;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e250;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;14;W. Zhang et al., Environmental Pollution 176 (2013) 10e251;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e252;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e254;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;4;W. Zhang et al., Environmental Pollution 176 (2013) 10e255;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;8;W. Zhang et al., Environmental Pollution 176 (2013) 10e256;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;12;W. Zhang et al., Environmental Pollution 176 (2013) 10e257;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;7;W. Zhang et al., Environmental Pollution 176 (2013) 10e258;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e259;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e260;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e261;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e262;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e263;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e264;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e265;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e266;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;10;W. Zhang et al., Environmental Pollution 176 (2013) 10e267;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e268;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e269;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e270;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e271;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e272;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;21;W. Zhang et al., Environmental Pollution 176 (2013) 10e273;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;6;W. Zhang et al., Environmental Pollution 176 (2013) 10e274;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e275;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;15;W. Zhang et al., Environmental Pollution 176 (2013) 10e276;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e277;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e278;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e279;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e280;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e281;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;4;W. Zhang et al., Environmental Pollution 176 (2013) 10e282;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;15;W. Zhang et al., Environmental Pollution 176 (2013) 10e283;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e284;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;4;W. Zhang et al., Environmental Pollution 176 (2013) 10e285;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;14;W. Zhang et al., Environmental Pollution 176 (2013) 10e286;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e287;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;6;W. Zhang et al., Environmental Pollution 176 (2013) 10e288;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;32;W. Zhang et al., Environmental Pollution 176 (2013) 10e289;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e290;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e291;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;4;W. Zhang et al., Environmental Pollution 176 (2013) 10e292;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e293;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e294;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e295;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e296;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e297;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e298;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;6;W. Zhang et al., Environmental Pollution 176 (2013) 10e299;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e300;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e301;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e302;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e303;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e304;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e305;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e306;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e307;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;4;W. Zhang et al., Environmental Pollution 176 (2013) 10e308;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e309;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e310;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e311;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e312;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e313;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e314;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;7;W. Zhang et al., Environmental Pollution 176 (2013) 10e315;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;6;W. Zhang et al., Environmental Pollution 176 (2013) 10e317;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e318;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e319;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e320;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e321;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e322;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e323;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;4;W. Zhang et al., Environmental Pollution 176 (2013) 10e324;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e325;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e326;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e327;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e328;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e329;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e330;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;7;W. Zhang et al., Environmental Pollution 176 (2013) 10e331;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;6;W. Zhang et al., Environmental Pollution 176 (2013) 10e333;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e334;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e335;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e336;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;18;W. Zhang et al., Environmental Pollution 176 (2013) 10e337;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e338;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e339;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;9;W. Zhang et al., Environmental Pollution 176 (2013) 10e340;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e341;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e342;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e343;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e344;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e345;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e346;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;9;W. Zhang et al., Environmental Pollution 176 (2013) 10e347;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e348;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e349;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e350;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;14;W. Zhang et al., Environmental Pollution 176 (2013) 10e351;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;10;W. Zhang et al., Environmental Pollution 176 (2013) 10e352;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e353;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e354;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;8;W. Zhang et al., Environmental Pollution 176 (2013) 10e355;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;11;W. Zhang et al., Environmental Pollution 176 (2013) 10e356;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e357;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e358;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e359;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e360;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e361;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e362;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;11;W. Zhang et al., Environmental Pollution 176 (2013) 10e363;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e364;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e365;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e366;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e367;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e368;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e369;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e370;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e371;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;4;W. Zhang et al., Environmental Pollution 176 (2013) 10e372;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e373;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e374;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e375;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e376;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e377;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e378;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;12;W. Zhang et al., Environmental Pollution 176 (2013) 10e379;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e380;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e381;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e382;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e383;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e384;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e385;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;29;W. Zhang et al., Environmental Pollution 176 (2013) 10e386;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e387;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;7;W. Zhang et al., Environmental Pollution 176 (2013) 10e388;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e389;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e390;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e391;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e392;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e393;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e394;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;6;W. Zhang et al., Environmental Pollution 176 (2013) 10e395;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e396;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;4;W. Zhang et al., Environmental Pollution 176 (2013) 10e397;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e398;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;14;W. Zhang et al., Environmental Pollution 176 (2013) 10e399;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e400;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;6;W. Zhang et al., Environmental Pollution 176 (2013) 10e401;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;26;W. Zhang et al., Environmental Pollution 176 (2013) 10e402;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e403;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e404;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e405;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e406;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e407;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e408;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e409;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e410;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;7;W. Zhang et al., Environmental Pollution 176 (2013) 10e411;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e412;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;4;W. Zhang et al., Environmental Pollution 176 (2013) 10e413;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e414;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;14;W. Zhang et al., Environmental Pollution 176 (2013) 10e415;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e416;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e417;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e418;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e419;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e420;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e421;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e422;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e423;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e424;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;4;W. Zhang et al., Environmental Pollution 176 (2013) 10e425;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e426;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;46;W. Zhang et al., Environmental Pollution 176 (2013) 10e427;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e428;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e429;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e430;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e431;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e432;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e433;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e434;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e435;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e436;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e437;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e438;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e439;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e440;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e441;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e442;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e443;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e444;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e445;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e446;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e448;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e449;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e450;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e451;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;4;W. Zhang et al., Environmental Pollution 176 (2013) 10e452;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e453;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e454;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e455;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e456;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e457;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e458;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;4;W. Zhang et al., Environmental Pollution 176 (2013) 10e459;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e460;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e461;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e462;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e463;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e464;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e465;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e466;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e467;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e468;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e469;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e470;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e471;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e472;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e473;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e474;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e475;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e476;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e477;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e478;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e479;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e480;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e481;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;9;W. Zhang et al., Environmental Pollution 176 (2013) 10e482;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e483;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;17;W. Zhang et al., Environmental Pollution 176 (2013) 10e484;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e485;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e486;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e487;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e488;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e489;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e490;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;9;W. Zhang et al., Environmental Pollution 176 (2013) 10e491;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e492;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e493;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e494;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;7;W. Zhang et al., Environmental Pollution 176 (2013) 10e495;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;4;W. Zhang et al., Environmental Pollution 176 (2013) 10e496;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e497;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e498;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e499;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e500;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e501;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e502;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e503;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e504;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e505;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e506;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;15;W. Zhang et al., Environmental Pollution 176 (2013) 10e507;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e508;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;22;W. Zhang et al., Environmental Pollution 176 (2013) 10e509;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpea;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e510;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;3;W. Zhang et al., Environmental Pollution 176 (2013) 10e511;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;7;W. Zhang et al., Environmental Pollution 176 (2013) 10e512;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfos ;rww;;;8;W. Zhang et al., Environmental Pollution 176 (2013) 10e513;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfbs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e514;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfprs;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e515;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfets;rww;;;2;W. Zhang et al., Environmental Pollution 176 (2013) 10e516;10.1016/j.envpol.2012.12.019;2013;SI
+literature;fosa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e517;10.1016/j.envpol.2012.12.019;2013;SI
+literature;etfosaa;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e518;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfdoda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e519;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfunda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e520;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfda;rww;;;0;W. Zhang et al., Environmental Pollution 176 (2013) 10e521;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfna;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e522;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfoa;rww;;;10;W. Zhang et al., Environmental Pollution 176 (2013) 10e523;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhpa;rww;;;1;W. Zhang et al., Environmental Pollution 176 (2013) 10e524;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfhxa;rww;;;19;W. Zhang et al., Environmental Pollution 176 (2013) 10e525;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;rww;;;5;W. Zhang et al., Environmental Pollution 176 (2013) 10e527;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfpra;rww;;;7;W. Zhang et al., Environmental Pollution 176 (2013) 10e528;10.1016/j.envpol.2012.12.019;2013;SI
+literature;pfba;iww;;;0;;;2024;PROMISCES CS3
+literature;pfpea;iww;;;0;;;2024;PROMISCES CS3
+literature;pfhpa;iww;;;0;;;2024;PROMISCES CS3
+literature;pfoa;iww;;;14.45792927;;;2024;PROMISCES CS3
+literature;pfna;iww;;;1.549328076;;;2024;PROMISCES CS3
+literature;pfda;iww;;;0;;;2024;PROMISCES CS3
+literature;pfbs;iww;;;166.55465;;;2024;PROMISCES CS3
+literature;pfhxs;iww;;;0;;;2024;PROMISCES CS3
+literature;pfos;iww;;;64.91739169;;;2024;PROMISCES CS3
+literature;pfba;iww;;;0;;;2024;PROMISCES CS3
+literature;pfpea;iww;;;0;;;2024;PROMISCES CS3
+literature;pfhpa;iww;;;16.49371328;;;2024;PROMISCES CS3
+literature;pfoa;iww;;;205.1365276;;;2024;PROMISCES CS3
+literature;pfna;iww;;;0;;;2024;PROMISCES CS3
+literature;pfda;iww;;;0;;;2024;PROMISCES CS3
+literature;pfbs;iww;;;180.1438168;;;2024;PROMISCES CS3
+literature;pfhxs;iww;;;0;;;2024;PROMISCES CS3
+literature;pfos;iww;;;50.21840532;;;2024;PROMISCES CS3
+literature;pfba;iww;;;0;;;2024;PROMISCES CS3
+literature;pfpea;iww;;;17.41174133;;;2024;PROMISCES CS3
+literature;pfhpa;iww;;;9.538707243;;;2024;PROMISCES CS3
+literature;pfoa;iww;;;15.64923282;;;2024;PROMISCES CS3
+literature;pfna;iww;;;2.498254195;;;2024;PROMISCES CS3
+literature;pfda;iww;;;0;;;2024;PROMISCES CS3
+literature;pfbs;iww;;;330.6922648;;;2024;PROMISCES CS3
+literature;pfhxs;iww;;;17.9820058;;;2024;PROMISCES CS3
+literature;pfos;iww;;;21.82885428;;;2024;PROMISCES CS3
+literature;pfba;iww;;;0;;;2024;PROMISCES CS3
+literature;pfpea;iww;;;21.61020599;;;2024;PROMISCES CS3
+literature;pfhpa;iww;;;0;;;2024;PROMISCES CS3
+literature;pfoa;iww;;;9.961362547;;;2024;PROMISCES CS3
+literature;pfna;iww;;;5.07575239;;;2024;PROMISCES CS3
+literature;pfda;iww;;;0;;;2024;PROMISCES CS3
+literature;pfbs;iww;;;50.49306669;;;2024;PROMISCES CS3
+literature;pfhxs;iww;;;5.396403388;;;2024;PROMISCES CS3
+literature;pfos;iww;;;18.94568892;;;2024;PROMISCES CS3
+literature;caffe;iww;;;20040.38;;;2024;PROMISCES CS3
+literature;dbp;iww;;;1552.3;;;2024;PROMISCES CS3
+literature;dep;iww;;;5138.66;;;2024;PROMISCES CS3
+literature;caffe;iww;;;24032.69;;;2024;PROMISCES CS3
+literature;dbp;iww;;;19.91;;;2024;PROMISCES CS3
+literature;dep;iww;;;0;;;2024;PROMISCES CS3
+literature;caffe;iww;;;23615.76;;;2024;PROMISCES CS3
+literature;dbp;iww;;;584.45;;;2024;PROMISCES CS3
+literature;dep;iww;;;4021.49;;;2024;PROMISCES CS3
+literature;caffe;iww;;;15911.74;;;2024;PROMISCES CS3
+literature;dbp;iww;;;472.44;;;2024;PROMISCES CS3
+literature;dep;iww;;;991.73;;;2024;PROMISCES CS3
+literature;pfhxa;iww;;;17.91388672;;;2024;PROMISCES CS3
+literature;pfhxa;iww;;;15.35713136;;;2024;PROMISCES CS3
+literature;cbz;iww;;;59.41;;;2024;PROMISCES CS3
+literature;cbz;iww;;;0;;;2024;PROMISCES CS3
+literature;cbz;iww;;;61.76;;;2024;PROMISCES CS3
+literature;cbz;iww;;;37.99;;;2024;PROMISCES CS3
+literature;diuron;iww;;;18;;;2024;PROMISCES CS3
+literature;diuron;iww;;;28.23;;;2024;PROMISCES CS3
+literature;diuron;iww;;;17.26;;;2024;PROMISCES CS3
+literature;diuron;iww;;;21.98;;;2024;PROMISCES CS3
+literature;pfba;iww;;;15.6;Hyejin Yun, Jeonghoon Park, Kyung-Duk Zoh, Target, suspect, and non-target screening of per- and poly-fluoroalkyl substances in wastewater treatment plant effluents in South Korea using ion mobility spectrometry–mass spectrometry, Science of The Total Environment, Volume 957, 2024,;10.1016/j.scitotenv.2024.177387.;2024;
+literature;pfba;iww;;;13;Yintao Lu, Jianfa Gao, Hue T. Nguyen, Soumini Vijayasarathy, Peng Du, Xiqing Li, Hong Yao, Jochen F. Mueller, Phong K. Thai, Occurrence of per- and polyfluoroalkyl substances (PFASs) in wastewater of major cities across China in 2014 and 2016, Chemosphere, Volume 279, 2021,;10.1016/j.chemosphere.2021.130590;2021;
+literature;pfba;rww;;;0;;;2024;PROMISCES CS3
+literature;pfpea;rww;;;0;;;2024;PROMISCES CS3
+literature;pfhpa;rww;;;0;;;2024;PROMISCES CS3
+literature;pfoa;rww;;;14.45792927;;;2024;PROMISCES CS3
+literature;pfna;rww;;;1.549328076;;;2024;PROMISCES CS3
+literature;pfda;rww;;;0;;;2024;PROMISCES CS3
+literature;pfbs;rww;;;166.55465;;;2024;PROMISCES CS3
+literature;pfhxs;rww;;;0;;;2024;PROMISCES CS3
+literature;pfos;rww;;;64.91739169;;;2024;PROMISCES CS3
+literature;pfba;rww;;;0;;;2024;PROMISCES CS3
+literature;pfpea;rww;;;0;;;2024;PROMISCES CS3
+literature;pfhpa;rww;;;16.49371328;;;2024;PROMISCES CS3
+literature;pfoa;rww;;;205.1365276;;;2024;PROMISCES CS3
+literature;pfna;rww;;;0;;;2024;PROMISCES CS3
+literature;pfda;rww;;;0;;;2024;PROMISCES CS3
+literature;pfbs;rww;;;180.1438168;;;2024;PROMISCES CS3
+literature;pfhxs;rww;;;0;;;2024;PROMISCES CS3
+literature;pfos;rww;;;50.21840532;;;2024;PROMISCES CS3
+literature;pfba;rww;;;0;;;2024;PROMISCES CS3
+literature;pfpea;rww;;;17.41174133;;;2024;PROMISCES CS3
+literature;pfhpa;rww;;;9.538707243;;;2024;PROMISCES CS3
+literature;pfoa;rww;;;15.64923282;;;2024;PROMISCES CS3
+literature;pfna;rww;;;2.498254195;;;2024;PROMISCES CS3
+literature;pfda;rww;;;0;;;2024;PROMISCES CS3
+literature;pfbs;rww;;;330.6922648;;;2024;PROMISCES CS3
+literature;pfhxs;rww;;;17.9820058;;;2024;PROMISCES CS3
+literature;pfos;rww;;;21.82885428;;;2024;PROMISCES CS3
+literature;pfba;rww;;;0;;;2024;PROMISCES CS3
+literature;pfpea;rww;;;21.61020599;;;2024;PROMISCES CS3
+literature;pfhpa;rww;;;0;;;2024;PROMISCES CS3
+literature;pfoa;rww;;;9.961362547;;;2024;PROMISCES CS3
+literature;pfna;rww;;;5.07575239;;;2024;PROMISCES CS3
+literature;pfda;rww;;;0;;;2024;PROMISCES CS3
+literature;pfbs;rww;;;50.49306669;;;2024;PROMISCES CS3
+literature;pfhxs;rww;;;5.396403388;;;2024;PROMISCES CS3
+literature;pfos;rww;;;18.94568892;;;2024;PROMISCES CS3
+literature;caffe;rww;;;20040.38;;;2024;PROMISCES CS3
+literature;dbp;rww;;;1552.3;;;2024;PROMISCES CS3
+literature;dep;rww;;;5138.66;;;2024;PROMISCES CS3
+literature;caffe;rww;;;24032.69;;;2024;PROMISCES CS3
+literature;dbp;rww;;;19.91;;;2024;PROMISCES CS3
+literature;dep;rww;;;0;;;2024;PROMISCES CS3
+literature;caffe;rww;;;23615.76;;;2024;PROMISCES CS3
+literature;dbp;rww;;;584.45;;;2024;PROMISCES CS3
+literature;dep;rww;;;4021.49;;;2024;PROMISCES CS3
+literature;caffe;rww;;;15911.74;;;2024;PROMISCES CS3
+literature;dbp;rww;;;472.44;;;2024;PROMISCES CS3
+literature;dep;rww;;;991.73;;;2024;PROMISCES CS3
+literature;pfhxa;rww;;;17.91388672;;;2024;PROMISCES CS3
+literature;pfhxa;rww;;;15.35713136;;;2024;PROMISCES CS3
+literature;cbz;rww;;;59.41;;;2024;PROMISCES CS3
+literature;cbz;rww;;;0;;;2024;PROMISCES CS3
+literature;cbz;rww;;;61.76;;;2024;PROMISCES CS3
+literature;cbz;rww;;;37.99;;;2024;PROMISCES CS3
+literature;diuron;rww;;;18;;;2024;PROMISCES CS3
+literature;diuron;rww;;;28.23;;;2024;PROMISCES CS3
+literature;diuron;rww;;;17.26;;;2024;PROMISCES CS3
+literature;diuron;rww;;;21.98;;;2024;PROMISCES CS3

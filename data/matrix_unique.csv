@@ -1,0 +1,15 @@
+matrix_id;matrix;matrix_description;units
+iww;Industrial wastewater;Raw wastewater from industrial sources;ng_l
+hww;Household wastewater;Raw wastewater from households;ng_l
+lww;Landfill leachate;Landfill leachate;ng_l
+rww;Raw wastewater;Raw wastewater from various sources (dominated by houshold wastewater);ng_l
+tiw;Treated industrial wastewater;Industrial or landfill leachate after wastewater treatment (not further specified, only used for site specific data);ng_l
+tww;Treated wastewater;Wastewater after primary and secondary treatment;ng_l
+stw;Stormwater runoff;Urban stormwater runoff;ng_l
+raw;Rainwater;Rainwater without runoff;ng_l
+suw;Surface water;Surfacewater;ng_l
+grw;Groundwater;Groundwater;ng_l
+pow;Soil pore water;Soil leachate;ng_l
+bfw;Bank filtrate;Bank filtrate;ng_l
+drw;Drinking water;Drinking water after treatment;ng_l
+sdg;Sludge;Thickened sludge from treated wastewater (as part of the secondary wastewater treatment);ng_l

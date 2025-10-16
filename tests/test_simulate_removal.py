@@ -27,10 +27,10 @@ class TestSimulateRemoval(TestCase):
         substance: Substance = Substances.pfoa
         input_matrix = Matrices.rww
 
-        result = simulate_removal(treatment_train, substance, input_matrix)
+        result = simulate_removal(input_matrix, substance, treatment_train)
 
         assert_that(result).is_instance_of(SimulationResult)
-        er_profiles(result)
+        er_profiles(result, no_mixture=True)
         spider_plot([result])
         # TODO: more assertions!
 
@@ -90,7 +90,7 @@ class TestSimulateRemoval(TestCase):
             references=[],
             starting_concentration=[]
         )
-        result = simulate_removal(treatment_train, substance, input_matrix, case_study=case_study, scenario=scenario)
+        result = simulate_removal(input_matrix, substance, treatment_train)
 
         assert_that(result).is_instance_of(SimulationResult)
 
@@ -118,7 +118,7 @@ class TestSimulateRemoval(TestCase):
                 start_c
             ]
         )
-        result = simulate_removal(treatment_train, substance, input_matrix, case_study=case_study, scenario=scenario)
+        result = simulate_removal(input_matrix, substance, treatment_train)
 
         assert_that(result).is_instance_of(SimulationResult)
 
@@ -144,7 +144,7 @@ class TestSimulateRemoval(TestCase):
             references=[],
             starting_concentration=[start_c]
         )
-        result = simulate_removal(treatment_train, substance, input_matrix, case_study=case_study, scenario=scenario)
+        result = simulate_removal(input_matrix, substance, treatment_train)
 
         assert_that(result).is_instance_of(SimulationResult)
 
@@ -170,7 +170,7 @@ class TestSimulateRemoval(TestCase):
             references=[],
             starting_concentration=[start_c]
         )
-        result = simulate_removal(treatment_train, substance, input_matrix, case_study=case_study, scenario=scenario)
+        result = simulate_removal(input_matrix, substance, treatment_train)
 
         assert_that(result).is_instance_of(SimulationResult)
 

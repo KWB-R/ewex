@@ -1,0 +1,66 @@
+substance_id;substance_group;substance_name;CAS
+pfba;PFAS;Perfluorobutanoic acid;375-22-4
+pfpea;PFAS;Perfluoropentanoic acid;2706-90-3
+pfhxa;PFAS;Perfluorohexanoic acid;307-24-4
+pfhpa;PFAS;Perfluoroheptanoic acid;375-85-9
+pfoa;PFAS;Perfluorooctanoic acid;335-67-1
+pfna;PFAS;Perfluorononanoic acid;375-95-1
+pfda;PFAS;Perfluorodecanoic acid;335-76-2
+pfunda;PFAS;Perfluoroundecanoic acid;2058-94-8
+pfdoda;PFAS;Perfluorododecanoic acid;307-55-1
+pftrda;PFAS;Perfluorotridecanoic acid;72629-94-8
+pfteda;PFAS;Perfluoro-n-tetradecanoic acid ;376-06-7 
+pfets;PFAS;Pentafluoroethanesulfonic acid;354-88-1
+pfprs;PFAS;Perfluoropropan-1-sulfonic cid;423-41-6
+pfbs;PFAS;Perfluorobutane sulfonic acid;375-73-5
+pfpes;PFAS;Perfluoropentane sulfonic acid;2706-91-4
+pfhxs;PFAS;Perfluorohexane sulfonic acid;355-46-4
+pfhps;PFAS;Perfluoroheptane sulfonic acid;375-92-8
+pfos;PFAS;Perfluorooctane sulfonic acid;1763-23-1
+pfns;PFAS;Perfluorononane sulfonic acid ;01.12.2723
+pfds;PFAS;Perfluorodecane sulfonic acid;335-77-3
+pfunds;PFAS;Perfluoroundecane sulfonic acid;749786-16-1
+pfdods;PFAS;Perfluorododecane sulfonic acid;335-77-3
+pftrds;PFAS;Perfluorotridecane sulfonic acid;791563-89-8
+10_2ftca;PFAS;10:2 FTCA, 10:2 fluorotelomer carboxylic acid;53826-13-4
+4_2ftca;PFAS;4:2 FTCA, 4:2 fluorotelomer carboxylic acid;N/A
+6_2dipap;PFAS;6:2diPAP, 6:2-Fluortelomerphosphatdiester;57677-95-9
+6_2ftca;PFAS;6:2 FTCA, 6:2 fluorotelomer carboxylic acid;99199-59-4
+8_2ftca;PFAS;8:2 FTCA, 8:2 fluorotelomer carboxylic acid;161094-76-4
+8_2ftuca;PFAS;(E) 8:2 FTUCA (2E)-3-(Perfluoroheptyl)-3-fluoroprop-2-enoic acid;70887-84-2
+nadona;PFAS;NaDONA, Dodecafluoro-3H-4,8-dioxanonanoic Acid;N/A
+adona;PFAS;ADONA, 3H-Perfluoro-3-[(3-methoxy-propoxy)propanoic acid];919005-14-4
+etfosa;PFAS;EtFOSA, n-Ethyl perfluorooctane sulfonamide ethanol;1691-99-2
+etfosaa;PFAS;EtFOSAA, n-Ethyl perfluorooctane sulfonamide acetic acid ;2991-50-6
+fosa;PFAS;FOSA, 1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,8-Heptadecafluorooctane-1-sulfonamide (also pfosa);754-91-6
+fosaa;PFAS;FOSAA, Perfluorooctane sulfonamide acetic acid ;2806-24-8
+mefosaa;PFAS;MeFOSAA, n-Methyl perfluorooctane sulfonamide acetic acid ;2355-31-9
+mefosa;PFAS;MeFOSA, n-Methyl perfluorooctane sulfonamide;31506-32-8
+8_2dipap;PFAS;8:2 diPAP, Bis(1H,1H,2H,2H-perfluorodecyl) phosphate;678-41-1
+10_2ftoh;PFAS;10:2 FTOH, 10:2 1H,1H,2H,2H-Perfluorododecan-1-ol ;865-86-1
+12_2ftoh;PFAS;12:2 FTOH, 1H,1H,2H,2H-Perfluorotetradecan-1-ol;39239-77-5
+14_2ftoh;PFAS;14:2 FTOH, 14:2 Fluorotelomer alcohol;60699-51-6
+2_2ftoh;PFAS;2:2 FTOH, 2:2 1H,1H,2H,2H-Perfluorobutan-1-ol;54949-74-5
+4_2ftoh;PFAS;4:2 FTOH, 2-(Perfluorobutyl)ethanol;2043-47-2
+6_2ftab;PFAS;6:2 FTAB, 6:2 fluorotelomer sulfonamide alkylbetaine;34455-29-3
+6_2ftoh;PFAS;6:2 FTOH, 6:2 Fluorotelomer alcohol;647-42-7
+8_2ftoh;PFAS;8:2 FTOH, 8:2 Fluorotelomer alcohol;678-39-7
+6_2fts;PFAS;6:2 FTS Sodium 1H,1H,2H,2H-perfluorooctanesulfonate ;27619-97-2
+mefbsa;PFAS;MeFBSA, N-Methylperfluoro-1-butanesulfonamide;68298-12-4
+fhxsa;PFAS;1,1,2,2,3,3,4,4,5,5,6,6,6-tridecafluoro-1-hexanesulfonamide;41997-13-1
+6_2ftsam;PFAS;6:2FTSAM, 6:2 sulfonamide alkylbetaine ;34455-29-3
+pfmoaa;PFAS;PFMOAA, Perfluoro-2-methoxyacetic acid;674-13-5
+pfmopra;PFAS;PFMOPrA, Perfluoro-3-methoxy-propanoic acid;377-73-1
+pfmoba;PFAS;PFMOBA, Perfluoro-4-methoxy-butanic acid;863090-89-5
+pfpropra;PFAS;PFPrOPrA, Perfluoro-2-propoxypropanoic acid;13252-13-6
+pfo2hxa;PFAS;PFO2HxA, 2-[difluoro(trifluoromethoxy)methoxy]-2,2-difluoroacetic acid;39492-88-1
+pfo3oa;PFAS;PFO3OA, Perfluoro-3,5,7-trioxaoctanoic acid;39492-89-2
+pfo4da;PFAS;PFO4DA,Perfluoro-3,5,7,9-butaoxadecanoic acid;39492-90-5
+genx;PFAS;GenX, ,3,3,3-tetrafluoro-2-(heptafluoropropoxy) propanoate;62037-80-3
+14_d;iPMT;1,4-dioxane;123-91-1
+benzo;iPM(T);Benzotriazole,1H-1,2,3-benzotriazole;95-14-7
+bpa;iPM(T);Bisphenol A, 4,4'-(propan-2,2-diil)difenolo;80-05-7
+cbz;Pharmaceutical;Carbamazepin5H-dibenzo [b,f]azepina-5-carbossammide;298-46-4
+dep;iPM(T);diethylphthalate;84-66-2
+dbp;iPM(T);dibuthylphthalate;84-74-2
+diuron;iPM(T);diuron;330-54-1

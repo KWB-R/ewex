@@ -1,0 +1,38 @@
+substance_id;matrix_id;reference_value_ng_l;reference_id;doi;year;comments
+14_d;drw;1000;CA State Water Board 14dioxane;;;
+benzo;drw;3000;UBA GOW (july 2020);;;
+pfda;drw;100;UBA GOW (july 2020);;;
+pfhpa;drw;300;UBA GOW (july 2020);;;
+pfhps;drw;300;UBA GOW (july 2020);;;
+pfosa;drw;100;UBA GOW (july 2020);;;
+pfpa;drw;3000;UBA GOW (july 2020);;;
+pfps;drw;1000;UBA GOW (july 2020);;;
+H4_PFOS_6_2_fluorotelomer_sulfonic_acid;drw;100;UBA GOW (july 2020);;;H4-PFOS (6:2 fluorotelemersulfonsäure)
+cbz;drw;300;UBA GOW (july 2020);;;
+pfba, pfpa, pfhxa, pfhpa, pfoa, pfna, pfda, pfunda, pfdoda, pftrda, pfbs, pfps, pfhxs, pfhps, pfos, pfns, pfds, pfunds, pfdods, pftrds;drw;100;EU DWD ;;;
+pfos;drw;4;EPA  Maximum Contaminant Levels;;;Proposed PFAS National Primary Drinking Water Regulation
+pfoa;drw;4;EPA  Maximum Contaminant Levels;;;Proposed PFAS National Primary Drinking Water Regulation
+pfbs;drw;2000;EPA  Maximum Contaminant Levels;;;Proposed PFAS National Primary Drinking Water Regulation
+pfhxs;drw;9;EPA  Maximum Contaminant Levels;;;Proposed PFAS National Primary Drinking Water Regulation
+pfna;drw;10;EPA  Maximum Contaminant Levels;;;Proposed PFAS National Primary Drinking Water Regulation
+genx;drw;10;EPA  Maximum Contaminant Levels;;;
+PFAS-4;drw;20;TrinkwV 2023;;2023;Sum of 4 compounds: pfhxs, pfna, pfoa, pfos 
+PFAS-20;drw;100;TrinkwV 2023 ;;2023;Sum of 20 compounds: pfba, pfpa, pfhxa, pfhpa, pfoa, pfna, pfda, pfunda, pfdoda, pftrda, pfbs, pfps, pfhxs, pfhps, pfos, pfns, pfds, pfunds, pfdods, pftrds
+pfoa;drw;5;TrinkwV 2023 + DOI 10.21945/RIVM-2018-0070;;2023;Use of relative potency factors: (20 / 4 / RPF = 1)
+pfos;drw;2.5;TrinkwV 2023 + DOI 10.21945/RIVM-2018-0070;;2023;Use of relative potency factors: (20 / 4 / RPF = 2)
+pfna;drw;0.5;TrinkwV 2023 + DOI 10.21945/RIVM-2018-0070;;2023;Use of relative potency factors: (20 / 4 / RPF = 10)
+pfhxs;drw;8.3;TrinkwV 2023 + DOI 10.21945/RIVM-2018-0070;;2023;Use of relative potency factors: (20 / 4 / RPF = 0.6)
+pfoa;pow;6;EFSA 2020 + Felizeter et al (2020);;2020;(TDI * 70) / (0.26 * FCF) * 10% other source factor, 70kg person, 0.26 kg/d vegetable consumption
+pfos;pow;0.6;EFSA 2020 + Felizeter et al (2020);;2020;(TDI * 70) / (0.26 * FCF) * 10% other source factor, 70kg person, 0.26 kg/d vegetable consumption
+pfna;pow;2.7;EFSA 2020 + Felizeter et al (2020);;2020;(TDI * 70) / (0.26 * FCF) * 10% other source factor, 70kg person, 0.26 kg/d vegetable consumption
+pfhxs;pow;0.03;EFSA 2020 + est.;;2020;(TDI * 70) / (0.26 * FCF) * 10% other source factor, 70kg person, 0.26 kg/d vegetable consumption
+pfbs;pow;3370;Tox Derived + Felizeter (2020);;2025;(TDI * 70) / (0.26 * FCF) * 10% other source factor, 70kg person, 0.26 kg/d vegetable consumption
+pfba;pow;1500;Tox Derived + Felizeter (2020);;2025;(TDI * 70) / (0.26 * FCF) * 10% other source factor, 70kg person, 0.26 kg/d vegetable consumption
+pfda;pow;0.0004;Tox Derived + Felizeter (2020);;2025;(TDI * 70) / (0.26 * FCF) * 10% other source factor, 70kg person, 0.26 kg/d vegetable consumption
+pfpea;pow;780;Tox Derived + Felizeter (2020);;2025;(TDI * 70) / (0.26 * FCF) * 10% other source factor, 70kg person, 0.26 kg/d vegetable consumption
+pfhpa;pow;900;Tox Derived + Felizeter (2020);;2025;(TDI * 70) / (0.26 * FCF) * 10% other source factor, 70kg person, 0.26 kg/d vegetable consumption
+dep;pow;150000;Tox Derived + est.;;2025;(TDI * 70) / (0.26 * FCF) * 10% other source factor, 70kg person, 0.26 kg/d vegetable consumption
+dbp;pow;1800;Tox Derived + est.;;2025;(TDI * 70) / (0.26 * FCF) * 10% other source factor, 70kg person, 0.26 kg/d vegetable consumption
+pfhxa;pow;94;Tox Derived + Felizeter (2020);;2025;(TDI * 70) / (0.26 * FCF) * 10% other source factor, 70kg person, 0.26 kg/d vegetable consumption
+cbz;pow;240;Tox Derived + est.;;2025;(TDI * 70) / (0.26 * FCF) * 10% other source factor, 70kg person, 0.26 kg/d vegetable consumption
+diuron;pow;370;Tox Derived + est.;;2025;(TDI * 70) / (0.26 * FCF) * 10% other source factor, 70kg person, 0.26 kg/d vegetable consumption

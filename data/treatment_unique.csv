@@ -1,0 +1,40 @@
+treatment_id ; treatment_group ; treatment_name                                                                       ; input_matrix                      ; output_matrix
+wwt1         ; WWT             ; Primary wastewater treatment                                                         ; rww, iww, hww, stw, lww           ; no_change
+wwt2         ; WWT             ; Secondary wastewater treatment                                                       ; rww, iww, hww, stw, lww           ; tww
+wwtt         ; WWT             ; Combination of primary and secondary wastewater treatment                            ; rww, iww, hww, stw, lww           ; tww
+wwco         ; WWT             ; Tertiary wastewater treatment: Coagulation and filtration                            ; tww, iww                          ; tww
+wwel         ; WWT             ; Tertiary wastewater treatment: Electro-oxidation  (e-peroxone)                       ; tww, iww                          ; tww
+wwuf         ; WWT             ; Tertiary wastewater treatment: Ultrafiltration                                       ; tww, iww, lww; tww
+wwnf         ; WWT             ; Tertiary wastewater treatment: Nanofiltration                                        ; tww, iww, lww                  ; tww
+wwro         ; WWT             ; Tertiary wastewater treatment: Reverse Osmosis                                       ; tww, iww                          ; tww
+wwmb         ; WWT             ; Tertiary wastewater treatment: Membrane bioreactor                                   ; rww, iww, hww, stw, tww, lww      ; tww
+wwsl         ; WWT             ; Combination of primary and secondary wastewater treatment: dewatered sludge          ; rww, hww                          ; sdg
+wetl         ; WWT             ; Addional treatment: Constructed wetland                                              ; rww, iww, hww, stw, tww, lww      ; tww
+dilsw        ; Mix             ; Dilution by surface water                                                            ; tww, stw                          ; suw
+dilww        ; Mix             ; Dilution by household wastewater                                                     ; iww, lww, rww, tww                ; rww
+dilgw        ; Mix             ; Dilution by groundwater                                                              ; bfw, pow                          ; grw
+dilpr        ; Mix             ; Dilution by process water (from minor secondary stream)                              ; tww, iww, hww, rww, lww, drw, grw ; no_change
+dilrw        ; Mix             ; Dilution by soil irrigation water                                                    ; suw, tww,  stw, sdg               ; pow
+sepev        ; Mix             ; Seperation due to evaporation                                                        ; suw, pow                          ; no_change
+npdgw        ; NaP             ; Natural Process: Degradation in surface water (biotic and abiotic)                   ; suw                               ; no_change
+npdgg        ; NaP             ; Natural Process: Degradation in groundwater (biotic and abiotic)                     ; grw                               ; no_change
+npbk         ; NaP             ; Natural Process: Bank filtration                                                     ; suw                               ; bfw
+npdgs        ; NaP             ; Natural Process: Degradation in soil (biotic and abiotic)                            ; pow                               ; no_change
+dwex         ; DWT             ; Drinking water treatment: anion exchange                                             ; suw, bfw, grw, drw, tww, stw      ; drw
+dwcy         ; DWT             ; Drinking water treatment: cyclodextrin                                               ; suw, bfw, grw, drw, tww, stw      ; drw
+dwae         ; DWT             ; Drinking water treatment: aeration                                                   ; suw, bfw, grw, drw, tww, stw      ; drw
+dwrf         ; DWT             ; Drinking water treatment: rapid filtration                                           ; suw, bfw, grw, drw, tww, stw      ; drw
+dwro         ; DWT             ; Drinking water treatment: reverse osmosis                                            ; suw, bfw, grw, drw, tww, stw      ; drw
+dwcl         ; DWT             ; Drinking water treatment: chloride                                                   ; suw, bfw, grw, drw, tww, stw      ; drw
+dwna         ; DWT             ; Drinking water treatment: NaOCl                                                      ; suw, bfw, grw, drw, tww, stw      ; drw
+dwuv         ; DWT             ; Drinking water treatment: UV                                                         ; suw, bfw, grw, drw, tww, stw      ; drw
+dwac         ; DWT             ; Drinking water treatment: granular acivated carbon                                   ; suw, bfw, grw, drw, tww, stw      ; drw
+dwuf         ; DWT             ; Drinking water treatment: ultra filtration                                           ; suw, bfw, grw, drw, tww, stw      ; drw
+dwde         ; DWT             ; Drinking water treatment: decantation                                                ; suw, bfw, grw, drw, tww, stw      ; drw
+dwoz         ; DWT             ; Drinking water treatment: disinfection with chlorine or ozone                        ; suw, bfw, grw, drw, tww, stw      ; drw
+dwpr         ; DWT             ; Drinking water treatment: pretreatment with predisinfection (chlorine)               ; suw, bfw, grw, drw, tww, stw      ; drw
+dwco         ; DWT             ; Drinking water treatment: coagulation and flocculation                               ; suw, bfw, grw, drw, tww, stw      ; drw
+grpz         ; GWT             ; Groundwater treatment: Persulfate-based in situ chemical oxidation - (n)ZVI          ; grw                               ; no_change
+grpf         ; GWT             ; Groundwater treatment: Persulfate-based in situ chemical oxidation - (n)ZVI + Fe(VI) ; grw                               ; no_change
+gren         ; GWT             ; Groundwater treatment: catalysis by extracellular ligninolytic enzymes               ; grw                               ; no_change
+gruc         ; GWT             ; Groundwater treatment: ultrasonic cavitation                                         ; grw                               ; no_change
