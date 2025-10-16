@@ -10,60 +10,108 @@ from matplotlib.ticker import FixedLocator
 from promisces.simulate_removal import SimulationResult
 
 
-def er_profiles(sim_result: SimulationResult,
-                save_as=None
-                ):
-    output_c_df = sim_result.output_c_df
-    rmv_factor_df = sim_result.rmv_factor_df
-    reference_value = sim_result.reference.ref_value_ng_l
-    case_study = sim_result.case_study
-    substance_name = sim_result.substance.name
+def er_profiles(
+        sim_results: list[SimulationResult],
+        case_study_name: str | None = None,
+        save_as: str | None = None,
+        no_mixture: bool = True,
+        c_scale: str | None = None,
+        color_palette: list = ["Grays"],
+        font_size: int = 12,
+        reference_value: float | None = True
+):
+    output_c_df = pd.concat([r.output_c_df.assign(scenario=r.scenario.name) for r in sim_results])
+    output_c_df = pd.melt(output_c_df, id_vars="scenario")
+    if reference_value is not None:
+        reference_value = sim_results[0].scenario.reference.ref_value_ng_l
+    substance_name = sim_results[0].scenario.substance.name
     # set the scale for concentration y axis
-    max_c = output_c_df.to_numpy().max()
-    if reference_value is not None and (max_c / reference_value) > 100:
-        c_scale = "log"
+    max_c = output_c_df.max(numeric_only=True).max()
+    if (reference_value is not None and c_scale is not None):
+        if (max_c / reference_value) > 100:
+            c_scale = "log"
     else:
         c_scale = "linear"
 
-    fig = plt.figure(figsize=(12, 8))
-    gs = fig.add_gridspec(2, hspace=.5)
+    if len(color_palette) == 1:
+        color_palette = color_palette[0]
+
+    fig = plt.figure(
+        figsize=(4 + len(sim_results) * len(sim_results[0].scenario.treatment_train) / (1 + int(len(sim_results) > 1)),
+                 4 + len(sim_results) * len(sim_results[0].scenario.treatment_train) / (1 + int(len(sim_results) > 1))))
+    gs = fig.add_gridspec(2, height_ratios=[1, 2])
     axs = gs.subplots()
+
+    draw_legend = "brief"
+    if len(sim_results) == 1:
+        draw_legend = False
 
     # Negative removal should be displayed reverse (input concentration / output Concentration),
     # so that every process is between 0 and 100%
-    # maybe displayed in another color 
+    # maybe displayed in another color
     # not implemented yet!!!!!
     sns.violinplot(
+        x="variable", y="value",
         data=output_c_df,
-        color="silver",
-        cut=0,
-        density_norm="width",
-        inner=None,
-        saturation=0.5,
-        ax=axs[0]
-    )
-    if case_study is not None:
-        axs[0].set_title("At CS '" + case_study.name + "'" + f" - '{sim_result.scenario}'")
-    axs[0].set_ylabel(substance_name + " (ng/L)")
-    if reference_value is not None:
-        axs[0].axhline(y=reference_value, color='black', linestyle='--')
-    axs[0].set_xlabel('Treatment step outlet')
-    axs[0].set_yscale(c_scale)
-
-    sns.violinplot(
-        data=rmv_factor_df,
-        color="silver",
+        hue="scenario",
+        # color=np.random.choice(["silver", "orange", "yellow", "blue"]),
         cut=0,
         density_norm="width",
         inner=None,
         saturation=1,
-        orient="h",
-        ax=axs[1]
+        palette=color_palette,
+        ax=axs[0],
+        legend=draw_legend
     )
 
-    if case_study is not None:
-        axs[1].set_title(substance_name + " at CS '" + case_study.name + "'" + f" - '{sim_result.scenario}'")
-    axs[1].set_xlabel('Reduction of concentration (removal or dilution) in %')
+    if len(sim_results) > 1:
+        plt.setp(axs[0].get_legend().get_texts(), fontsize=font_size)
+        plt.setp(axs[0].get_legend().get_title(), fontsize=font_size)
+    plt.xticks(fontsize=font_size, rotation=0)
+    plt.yticks(fontsize=font_size, rotation=0)
+
+    axs[0].set_title(f"At CS: '{case_study_name}'" if case_study_name is not None else "")
+    axs[0].set_ylabel(substance_name + " (ng/L)", fontsize=font_size)
+    if reference_value is not None:
+        axs[0].axhline(y=reference_value, color='black', linestyle='--')
+    axs[0].set_xlabel('Treatment step outlet', fontsize=font_size)
+    axs[0].set_yscale(c_scale)
+
+    rmv_factor_df = pd.concat([r.rmv_factor_df.assign(scenario=r.scenario.name) for r in sim_results])
+    if no_mixture:
+        mixture_columns = [rmv_factor_df.columns.get_loc(col) for col in rmv_factor_df.columns if "dil" in col]
+        rmv_factor_df = rmv_factor_df.drop(rmv_factor_df.columns[mixture_columns], axis=1)
+    rmv_factor_df = pd.melt(rmv_factor_df, id_vars="scenario")
+
+    sns.violinplot(
+        x="value", y="variable",
+        data=rmv_factor_df,
+        hue="scenario",
+        cut=0,
+        density_norm="width",
+        inner=None,
+        saturation=1,
+        palette=color_palette,
+        orient="h",
+        ax=axs[1],
+        legend=draw_legend
+    )
+
+    if len(sim_results) > 1:
+        plt.setp(axs[1].get_legend().get_texts(), fontsize = font_size)
+        plt.setp(axs[1].get_legend().get_title(),fontsize = font_size)
+    ## Legen above the plot
+    # plt.setp(axs[1].legend(bbox_to_anchor=(0, 1.02, 1, 0.2), loc="lower left",
+    #            mode="expand", borderaxespad=0, ncol=3, fontsize = font_size))
+        plt.setp(axs[1].legend(loc="right", fontsize=font_size))
+
+
+    axs[1].set_title(substance_name + f" at CS: '{case_study_name}'" if case_study_name is not None else "")
+    axs[1].set_xlabel('Reduction of concentration (removal or dilution) in %', fontsize = font_size)
+    axs[1].set_ylabel('Treatment step outlet', fontsize = font_size)
+    plt.xticks(fontsize = font_size, rotation = 0)
+    plt.yticks(fontsize = font_size, rotation = 0)
+
     left, right = plt.xlim()
     if left < -1000:
         axs[1].set_xlim(-1000, 150)
@@ -72,12 +120,16 @@ def er_profiles(sim_result: SimulationResult,
     return fig
 
 
-def spider_plot(sim_results: list[SimulationResult]):
-    rq = [r.final_concentration / r.reference.ref_value_ng_l for r in sim_results]
+def spider_plot(
+        sim_results: list[SimulationResult],
+        case_study_name: str | None = None,
+):
+
+    rq = [r.final_concentration / r.scenario.reference.ref_value_ng_l for r in sim_results]
 
     output_c_df = pd.DataFrame(np.column_stack(rq),
                                columns=[
-                                   f"{r.case_study.name if r.case_study is not None else f'result {i}'} - {r.scenario}"
+                                   f"{case_study_name if case_study_name is not None else f'result {i}'}  {r.scenario.name}"
                                    for i, r in enumerate(sim_results)]
                                )
 
