@@ -1,23 +1,20 @@
 import os
+import warnings
+
 import numpy as np
 import pandas as pd
 import dataclasses as dtc
 
 from promisces.models.array_container import ArrayContainer
 from promisces.models.matrix import Matrix
-from promisces.models.substance import Substance
 
 
 @dtc.dataclass
 class StartingConcentration(ArrayContainer):
     arr: np.ndarray
-    substance: Substance
-    matrix: Matrix
-
-    attrs = ["substance", "matrix"]
 
     @staticmethod
-    def from_lit(substance: Substance, matrix: Matrix) -> "StartingConcentration":
+    def from_lit(substance, matrix: Matrix) -> "StartingConcentration":
         df = pd.read_csv(os.path.join("data", "starting_concentration.csv"),
                          encoding='cp1252',
                          sep=';',
@@ -34,7 +31,10 @@ class StartingConcentration(ArrayContainer):
             dff.point_value_ng_l.values,
             dff.max_value_ng_l.values)
         )
-        return StartingConcentration(lit_values[~np.isnan(lit_values)], substance, matrix)
+        if len(~np.isnan(lit_values)) == 0:
+            warnings.warn(f"no starting concentration found for {substance.id} - {matrix.id}")
+        return StartingConcentration(lit_values[~np.isnan(lit_values)])
 
     def n_uniform_samples(self, n_samples: int):
+        # TODO: CHECK SORTING
         return np.sort(np.random.uniform(self.arr.min(), self.arr.max(), n_samples))[::-1]

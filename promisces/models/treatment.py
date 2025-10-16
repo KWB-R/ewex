@@ -1,7 +1,13 @@
+from __future__ import annotations
+
 import dataclasses as dtc
 from enum import Enum
-from typing import Iterable, Iterator
+from typing import Iterator
 
+import numpy as np
+
+import promisces.models.mixture as mixture_model
+import promisces.models.removal_percent as removal_model
 from promisces.models.matrix import Matrices, Matrix
 
 
@@ -21,10 +27,14 @@ class Treatment:
     input_matrix: list[Matrix]
     output_matrix: Matrix
     with_lit_data: bool = True
+    removal: removal_model.RemovalPercent | None = None
+    mixture: mixture_model.Mixture | None = None
 
     def __post_init__(self):
         if Matrices.no_change in self.input_matrix:
             raise ValueError("MatrixEnum.no_change is not allowed in input_matrix")
+        if self.removal is None:
+            self.removal = removal_model.RemovalPercent(np.array([]))
 
     def get_output_matrix(self, input_matrix: Matrix) -> Matrix:
         if self.output_matrix == Matrices.no_change:
@@ -39,16 +49,63 @@ class Treatment:
         self.with_lit_data = False
         return self
 
+    def with_removal(self, removal: removal_model.RemovalPercent):
+        if self.requires_mixture:
+            raise TypeError(f"Treatment '{self.id}' doesn't support setting its removal. "
+                            f"It expects a Mixture object.")
+        self.removal = removal
+        return self
+
+    def with_mixture(self, mixture: mixture_model.Mixture):
+        if not self.requires_mixture:
+            raise TypeError(f"Treatment '{self.id}' doesn't support mixtures. It expects a RemovalPercent object."
+                            f" Mixtures are supported by 'dil*' and 'sepev' treatments")
+        self.mixture = mixture
+        return self
+
+    def clone(
+            self,
+            id: str | None = None,
+            name: str | None = None,
+            input_matrix: list[Matrix] | None = None,
+            output_matrix: Matrix | None = None,
+            with_lit_data: bool | None = None,
+            removal: removal_model.RemovalPercent | None = None,
+            mixture: mixture_model.Mixture | None = None
+    ):
+        id = id or self.id
+        name = name or self.name
+        input_matrix = input_matrix or self.input_matrix
+        output_matrix = output_matrix or self.output_matrix
+        with_lit_data = with_lit_data if with_lit_data is not None else self.with_lit_data
+        removal = removal or self.removal
+        mixture = mixture or self.mixture
+        return Treatment(id, self.group, name, input_matrix, output_matrix, with_lit_data, removal, mixture)
+
+    def __hash__(self):
+        return hash(self.id)
+
 
 @dtc.dataclass
 class TreatmentTrain:
-    treatments: list[Treatment, ...]
+    treatments: list[Treatment]
+
+    def copy(self):
+        return TreatmentTrain([t.clone() for t in self.treatments])
 
     def validate_matrices(self, input_matrix: Matrix):
         for i in range(len(self)):
             if input_matrix not in self[i].input_matrix:
-                raise ValueError(f"incompatible input matrix at index {i}")
+                raise ValueError(f"incompatible input matrix ('{input_matrix.id}') for treatment '{self[i].id}'"
+                                 f" at index {i}.\n"
+                                 f"Expected one of [{' '.join([m.id for m in self[i].input_matrix])}]")
             input_matrix = self[i].get_output_matrix(input_matrix)
+
+    def validate_mixtures(self):
+        for i, treatment in enumerate(self):
+            if treatment.requires_mixture and treatment.mixture is None:
+                raise ValueError(f"Expected treatment '{treatment.id}' at index {i} to contain mixture data"
+                                 f" but treatment.mixture was None.")
 
     def output_matrix(self, input_matrix: Matrix) -> Matrix:
         out_mat = input_matrix
@@ -98,7 +155,7 @@ class Treatments:
                       Matrices.suw)
     dilww = Treatment("dilww", TreatmentGroup.MIX, "Dilution by household wastewater",
                       [Matrices.iww, Matrices.lww, Matrices.rww, Matrices.tww], Matrices.rww)
-    dilgw = Treatment("dilgw", TreatmentGroup.MIX, "Dilution by groundwater", [Matrices.bfw, Matrices.pow],
+    dilgw = Treatment("dilgw", TreatmentGroup.MIX, "Dilution by groundwater", [Matrices.bfw, Matrices.pow, Matrices.grw],
                       Matrices.grw)
     dilpr = Treatment("dilpr", TreatmentGroup.MIX, "Dilution by process water (from minor secondary stream)",
                       [Matrices.tww, Matrices.iww, Matrices.hww, Matrices.rww, Matrices.lww, Matrices.drw],

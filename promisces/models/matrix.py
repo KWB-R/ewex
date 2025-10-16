@@ -1,10 +1,5 @@
 import dataclasses as dtc
 
-import numpy as np
-import pandas as pd
-
-from promisces.models.substance import Substance
-
 
 @dtc.dataclass
 class Matrix:
@@ -13,30 +8,7 @@ class Matrix:
     description: str
 
     def __repr__(self):
-        return f"InputMatrix({self.id}, {self.name})"
-
-    def substance_concentration_range_from_lit(self, substance: Substance) -> tuple[float, float]:
-        df = pd.read_csv(os.path.join("data", "starting_concentration.csv"),
-                         encoding='cp1252',
-                         sep=';',
-                         na_values="",
-                         keep_default_na=False,
-                         dtype={"removal_percent": float}
-                         )
-        dff = df.loc[
-            (df.substance_id == substance.id) &
-            (df.matrix_id == self.id)
-            ]
-        lit_values = np.concatenate((
-            dff.min_value_ng_l.values,
-            dff.point_value_ng_l.values,
-            dff.max_value_ng_l.values)
-        )
-
-        lit_values = lit_values[~np.isnan(lit_values)]
-        if not np.any(lit_values):
-            raise RuntimeError(f"No concentration found for substance {substance.id} in matrix {self.id}")
-        return lit_values.min(), lit_values.max()
+        return f"Matrix({self.id}, {self.name})"
 
 
 class Matrices:

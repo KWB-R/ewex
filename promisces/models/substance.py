@@ -1,6 +1,8 @@
 import dataclasses as dtc
-import enum
 from enum import Enum
+
+import promisces.models.reference as reference_model
+import promisces.models.starting_concentration as sc_model
 
 
 class SubstanceGroup(Enum):
@@ -15,9 +17,23 @@ class Substance:
     group: SubstanceGroup
     name: str
     CAS: str
+    starting_concentration: sc_model.StartingConcentration | None = None
+    reference: reference_model.Reference | None = None
+
+    def with_starting_concentration(self, starting_concentration: sc_model.StartingConcentration):
+        self.starting_concentration = starting_concentration
+        return self
+
+    def with_reference(self, reference: reference_model.Reference):
+        self.reference = reference
+        return self
+
+    def __hash__(self):
+        return hash(self.id)
 
 
 class Substances:
+    tfmsa = Substance("tfmsa", SubstanceGroup.PFAS, "Trifluoromethanesulfonic acid", "1493-13-6")
     pfba = Substance("pfba", SubstanceGroup.PFAS, "Perfluorobutanoic acid", "375-22-4")
     pfpea = Substance("pfpea", SubstanceGroup.PFAS, "Perfluoropentanoic acid", "2706-90-3")
     pfhxa = Substance("pfhxa", SubstanceGroup.PFAS, "Perfluorohexanoic acid", "307-24-4")
@@ -76,8 +92,10 @@ class Substances:
                          "34455-29-3")
     _6_2ftoh = Substance("_6_2ftoh", SubstanceGroup.PFAS, "6:2 FTOH, 6:2 Fluorotelomer alcohol", "647-42-7")
     _8_2ftoh = Substance("_8_2ftoh", SubstanceGroup.PFAS, "8:2 FTOH, 8:2 Fluorotelomer alcohol", "678-39-7")
-    _6_2fts = Substance("_6_2fts", SubstanceGroup.PFAS, "6:2 FTS Sodium 1H,1H,2H,2H-perfluorooctanesulfonate ",
+    fts_4_2 = Substance("_4_2fts", SubstanceGroup.PFAS, "4:2 FTS", "757124-72-4")
+    fts_6_2 = Substance("_6_2fts", SubstanceGroup.PFAS, "6:2 FTS, Sodium 1H,1H,2H,2H-perfluorooctanesulfonate",
                         "27619-97-2")
+    fts_8_2 = Substance("_8_2fts", SubstanceGroup.PFAS, "8:2 FTS", "39108-34-4")
     mefbsa = Substance("mefbsa", SubstanceGroup.PFAS, "MeFBSA, N-Methylperfluoro-1-butanesulfonamide", "68298-12-4")
     fhxsa = Substance("fhxsa", SubstanceGroup.PFAS, "1,1,2,2,3,3,4,4,5,5,6,6,6-tridecafluoro-1-hexanesulfonamide",
                       "41997-13-1")
