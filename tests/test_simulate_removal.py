@@ -3,16 +3,16 @@ from unittest import TestCase
 import numpy as np
 from assertpy import assert_that
 
-from promisces.models.case_study import CaseStudy
-from promisces.models.mixture import Mixture
-from promisces.models.removal_percent import RemovalPercent
-from promisces.models.starting_concentration import StartingConcentration
-from promisces.models.treatment import Treatments, TreatmentTrain
-from promisces.models.matrix import Matrices
-from promisces.models.substance import Substances, Substance
-from promisces.removal_processes import ProcessType, DominantDistribution
-from promisces.simulate_removal import simulate_removal, SimulationResult
-from promisces.plots import er_profiles, spider_plot
+from ewex.models.case_study import CaseStudy
+from ewex.models.mixture import Mixture
+from ewex.models.removal_percent import RemovalPercent
+from ewex.models.starting_concentration import StartingConcentration
+from ewex.models.treatment import Treatments, TreatmentTrain
+from ewex.models.matrix import Matrices
+from ewex.models.substance import Substances, Substance
+from ewex.removal_processes import ProcessType, DominantDistribution
+from ewex.simulate_removal import simulate_removal, SimulationResult
+from ewex.plots import er_profiles, spider_plot
 
 
 class TestSimulateRemoval(TestCase):

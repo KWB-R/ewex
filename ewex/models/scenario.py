@@ -2,11 +2,11 @@ import dataclasses as dtc
 from itertools import product
 from typing import Iterator
 
-from promisces.models.matrix import Matrix
-from promisces.models.substance import Substance
-from promisces.models.treatment import TreatmentTrain
-from promisces.models.starting_concentration import StartingConcentration
-from promisces.models.reference import Reference
+from ewex.models.matrix import Matrix
+from ewex.models.substance import Substance
+from ewex.models.treatment import TreatmentTrain
+from ewex.models.starting_concentration import StartingConcentration
+from ewex.models.reference import Reference
 
 
 @dtc.dataclass
@@ -33,7 +33,7 @@ class Scenario:
                          n_runs: int = 10000,
                          rmv_factor_resolution: int = 1000,
                          ):
-        from promisces.simulate_removal import simulate_removal
+        from ewex.simulate_removal import simulate_removal
         return simulate_removal(
             self,
             n_runs,

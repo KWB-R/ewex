@@ -2,10 +2,10 @@ import dataclasses as dtc
 import numpy as np
 import pandas as pd
 
-from promisces.models.removal_percent import RemovalPercent
-from promisces.models.starting_concentration import StartingConcentration
-from promisces.models.scenario import Scenario
-from promisces.removal_processes import (
+from ewex.models.removal_percent import RemovalPercent
+from ewex.models.starting_concentration import StartingConcentration
+from ewex.models.scenario import Scenario
+from ewex.removal_processes import (
     ProcessResult,
     apply_generic_process,\
     apply_mixture_process,\

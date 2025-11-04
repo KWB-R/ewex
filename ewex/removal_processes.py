@@ -6,7 +6,7 @@ from numpy.random import choice
 import numpy as np
 from scipy.stats import norm, beta, truncnorm, lognorm
 
-from promisces.models.removal_percent import RemovalPercent
+from ewex.models.removal_percent import RemovalPercent
 
 
 class ProcessType(Enum):

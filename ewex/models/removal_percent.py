@@ -5,9 +5,9 @@ import numpy as np
 import pandas as pd
 import dataclasses as dtc
 
-from promisces.models.array_container import ArrayContainer
-from promisces.models.substance import Substance
-import promisces.models.treatment as treatment_model
+from ewex.models.array_container import ArrayContainer
+from ewex.models.substance import Substance
+import ewex.models.treatment as treatment_model
 
 
 @dtc.dataclass

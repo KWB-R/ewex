@@ -3,14 +3,14 @@
 #
 # import numpy as np
 #
-# from promisces.models.reference import Reference
-# from promisces.models.starting_concentration import StartingConcentration
-# import promisces.models.removal_percent as rmv
-# from promisces.models.matrix import Matrix, Matrices
-# from promisces.models.substance import Substance, Substances
-# from promisces.models.treatment import Treatments, TreatmentTrain
-# from promisces.models.mixture import Mixture
-# from promisces.models.scenario import Scenario
+# from ewex.models.reference import Reference
+# from ewex.models.starting_concentration import StartingConcentration
+# import ewex.models.removal_percent as rmv
+# from ewex.models.matrix import Matrix, Matrices
+# from ewex.models.substance import Substance, Substances
+# from ewex.models.treatment import Treatments, TreatmentTrain
+# from ewex.models.mixture import Mixture
+# from ewex.models.scenario import Scenario
 #
 #
 # @dtc.dataclass
