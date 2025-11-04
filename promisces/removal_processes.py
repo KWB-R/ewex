@@ -78,6 +78,7 @@ def apply_generic_process(
     # print(lit_rmv.arr)
     # print(cs_rmv.arr)
     # print("---------------------------")
+    lit_rmv = np.where(lit_rmv < 0, 0, lit_rmv)
     lit_rmv_factor, lit_lkl = to_likelihood(rmv_values=lit_rmv,
                                             rmv_factor_resolution=rmv_factor_resolution)
     cs_rmv_factor, cs_lkl = to_likelihood(rmv_values=cs_rmv,

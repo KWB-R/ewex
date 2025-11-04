@@ -54,13 +54,15 @@ def er_profiles(
         cut=0,
         density_norm="width",
         inner=None,
-        saturation=0.5,
+        saturation=1,
         palette=color_palette,
         ax=axs[0],
-        legend="brief"
+        legend="brief" if len(sim_results) > 1 else False
     )
-    plt.setp(axs[0].get_legend().get_texts(), fontsize=font_size)
-    plt.setp(axs[0].get_legend().get_title(), fontsize=font_size)
+
+    if len(sim_results) > 1:
+        plt.setp(axs[0].get_legend().get_texts(), fontsize=font_size)
+        plt.setp(axs[0].get_legend().get_title(), fontsize=font_size)
     plt.xticks(fontsize=font_size, rotation=0)
     plt.yticks(fontsize=font_size, rotation=0)
 
@@ -88,15 +90,16 @@ def er_profiles(
         palette=color_palette,
         orient="h",
         ax=axs[1],
-        legend="brief"
+        legend="brief" if len(sim_results) > 1 else False
     )
 
-    plt.setp(axs[1].get_legend().get_texts(), fontsize = font_size)
-    plt.setp(axs[1].get_legend().get_title(),fontsize = font_size)
+    if len(sim_results) > 1:
+        plt.setp(axs[1].get_legend().get_texts(), fontsize = font_size)
+        plt.setp(axs[1].get_legend().get_title(),fontsize = font_size)
     ## Legen above the plot
     # plt.setp(axs[1].legend(bbox_to_anchor=(0, 1.02, 1, 0.2), loc="lower left",
     #            mode="expand", borderaxespad=0, ncol=3, fontsize = font_size))
-    plt.setp(axs[1].legend(loc="right", fontsize=font_size))
+        plt.setp(axs[1].legend(loc="right", fontsize=font_size))
 
 
     axs[1].set_title(substance_name + f" at CS: '{case_study_name}'" if case_study_name is not None else "")
@@ -122,7 +125,7 @@ def spider_plot(
 
     output_c_df = pd.DataFrame(np.column_stack(rq),
                                columns=[
-                                   f"{case_study_name if case_study_name is not None else f'result {i}'} - {r.scenario.name}"
+                                   f"{case_study_name if case_study_name is not None else f'result {i}'}  {r.scenario.name}"
                                    for i, r in enumerate(sim_results)]
                                )
 
