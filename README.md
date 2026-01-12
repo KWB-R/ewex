@@ -40,7 +40,7 @@ pip install jupyter
 for `promisces` to work correctly, you'll need to put all the `.csv` of the literature data in a directory named `data/` at the top-level of the project's directory.
 Then, `promisces/` should look like this:
 ```bash
-promisces/
+promisces.hhea/
   data/
     matrix_unique.csv
     process_removal_lit.csv
@@ -48,7 +48,7 @@ promisces/
     starting_concentration.csv
     substance_unique.csv
     treatment_unique.csv
-  promisces/
+  hhea/
     models/
       ...
     simulate_removals.py

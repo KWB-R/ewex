@@ -3,16 +3,16 @@ from unittest import TestCase
 import numpy as np
 from assertpy import assert_that
 
-from promisces.models.case_study import CaseStudy
-from promisces.models.mixture import Mixture
-from promisces.models.removal_percent import RemovalPercent
-from promisces.models.starting_concentration import StartingConcentration
-from promisces.models.treatment import Treatments, TreatmentTrain
-from promisces.models.matrix import Matrices
-from promisces.models.substance import Substances, Substance
-from promisces.removal_processes import ProcessType, DominantDistribution
-from promisces.simulate_removal import simulate_removal, SimulationResult
-from promisces.plots import er_profiles, spider_plot
+from hhea.models.case_study import CaseStudy
+from hhea.models.mixture import Mixture
+from hhea.models.removal_percent import RemovalPercent
+from hhea.models.starting_concentration import StartingConcentration
+from hhea.models.treatment import Treatments, TreatmentTrain
+from hhea.models.matrix import Matrices
+from hhea.models.substance import Substances, Substance
+from hhea.removal_processes import ProcessType, DominantDistribution
+from hhea.simulate_removal import simulate_removal, SimulationResult
+from hhea.plots import er_profiles, spider_plot
 
 
 class TestSimulateRemoval(TestCase):

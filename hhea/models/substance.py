@@ -1,14 +1,18 @@
 import dataclasses as dtc
 from enum import Enum
 
-import promisces.models.reference as reference_model
-import promisces.models.starting_concentration as sc_model
+import hhea.models.reference as reference_model
+import hhea.models.starting_concentration as sc_model
 
 
 class SubstanceGroup(Enum):
     PFAS = "PFAS"
     iPMT = "iPM(T)"
     Pharmaceutical = "Pharmaceutical"
+
+    @classmethod
+    def choices(cls):
+        return tuple((i.name, i.value) for i in cls)
 
 
 @dtc.dataclass
@@ -59,13 +63,13 @@ class Substances:
     pftrds = Substance("pftrds", SubstanceGroup.PFAS, "Perfluorotridecane sulfonic acid", "791563-89-8")
     _10_2ftca = Substance("_10_2ftca", SubstanceGroup.PFAS, "10:2 FTCA, 10:2 fluorotelomer carboxylic acid",
                           "53826-13-4")
-    _4_2ftca = Substance("_4_2ftca", SubstanceGroup.PFAS, "4:2 FTCA, 4:2 fluorotelomer carboxylic acid", None)
+    _4_2ftca = Substance("_4_2ftca", SubstanceGroup.PFAS, "4:2 FTCA, 4:2 fluorotelomer carboxylic acid", "NOT A CAS _4_2ftca")
     _6_2dipap = Substance("_6_2dipap", SubstanceGroup.PFAS, "6:2diPAP, 6:2-Fluortelomerphosphatdiester", "57677-95-9")
     _6_2ftca = Substance("_6_2ftca", SubstanceGroup.PFAS, "6:2 FTCA, 6:2 fluorotelomer carboxylic acid", "99199-59-4")
     _8_2ftca = Substance("_8_2ftca", SubstanceGroup.PFAS, "8:2 FTCA, 8:2 fluorotelomer carboxylic acid", "161094-76-4")
     _8_2ftuca = Substance("_8_2ftuca", SubstanceGroup.PFAS,
                           "(E) 8:2 FTUCA (2E)-3-(Perfluoroheptyl)-3-fluoroprop-2-enoic acid", "70887-84-2")
-    nadona = Substance("nadona", SubstanceGroup.PFAS, "NaDONA, Dodecafluoro-3H-4,8-dioxanonanoic Acid", None)
+    nadona = Substance("nadona", SubstanceGroup.PFAS, "NaDONA, Dodecafluoro-3H-4,8-dioxanonanoic Acid", "NOT A CAS nadona")
     adona = Substance("adona", SubstanceGroup.PFAS, "ADONA, 3H-Perfluoro-3-[(3-methoxy-propoxy)propanoic acid]",
                       "919005-14-4")
     etfosa = Substance("etfosa", SubstanceGroup.PFAS, "EtFOSA, n-Ethyl perfluorooctane sulfonamide ethanol",

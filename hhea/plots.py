@@ -7,7 +7,7 @@ from matplotlib import pyplot as plt, patches as mpatches
 import seaborn as sns
 from matplotlib.ticker import FixedLocator
 
-from promisces.simulate_removal import SimulationResult
+from hhea.simulate_removal import SimulationResult
 
 
 def er_profiles(

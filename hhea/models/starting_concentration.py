@@ -5,8 +5,8 @@ import numpy as np
 import pandas as pd
 import dataclasses as dtc
 
-from promisces.models.array_container import ArrayContainer
-from promisces.models.matrix import Matrix
+from hhea.models.array_container import ArrayContainer
+from hhea.models.matrix import Matrix
 
 
 @dtc.dataclass

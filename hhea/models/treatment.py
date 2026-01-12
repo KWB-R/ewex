@@ -6,9 +6,9 @@ from typing import Iterator
 
 import numpy as np
 
-import promisces.models.mixture as mixture_model
-import promisces.models.removal_percent as removal_model
-from promisces.models.matrix import Matrices, Matrix
+import hhea.models.mixture as mixture_model
+import hhea.models.removal_percent as removal_model
+from hhea.models.matrix import Matrices, Matrix
 
 
 class TreatmentGroup(Enum):
@@ -17,6 +17,10 @@ class TreatmentGroup(Enum):
     WWT = "Wastewater"
     NAP = "Natural Process"
     MIX = "Mixing and Separation"
+
+    @classmethod
+    def choices(cls):
+        return tuple((i.name, i.value) for i in cls)
 
 
 @dtc.dataclass

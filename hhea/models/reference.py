@@ -4,7 +4,7 @@ import warnings
 
 import pandas as pd
 
-from promisces.models.matrix import Matrix
+from hhea.models.matrix import Matrix
 
 
 @dtc.dataclass
