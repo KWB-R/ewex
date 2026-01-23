@@ -3,7 +3,7 @@ from unittest import TestCase
 import numpy as np
 from assertpy import assert_that
 
-from ewex.models.case_study import CaseStudy
+from ewex import Scenario
 from ewex.models.mixture import Mixture
 from ewex.models.removal_percent import RemovalPercent
 from ewex.models.starting_concentration import StartingConcentration
@@ -26,11 +26,12 @@ class TestSimulateRemoval(TestCase):
         ])
         substance: Substance = Substances.pfoa
         input_matrix = Matrices.rww
+        scenario = Scenario("test scenario", input_matrix, substance, treatment_train)
 
-        result = simulate_removal(treatment_train, substance, input_matrix)
+        result = simulate_removal(scenario)
 
         assert_that(result).is_instance_of(SimulationResult)
-        er_profiles(result)
+        er_profiles([result])
         spider_plot([result])
         # TODO: more assertions!
 
@@ -39,12 +40,11 @@ class TestSimulateRemoval(TestCase):
             Treatments.gruc
         ])
         substance: Substance = Substances.pfoa
-
         # wrong input matrix for the treatment
         input_matrix = Matrices.rww
 
-        assert_that(simulate_removal).raises(ValueError).when_called_with(
-            treatment_train, substance, input_matrix
+        assert_that(Scenario).raises(ValueError).when_called_with(
+            "test scenario", input_matrix, substance, treatment_train
         )
 
     def test_should_raise_on_missing_starting_concentration(self):
@@ -55,9 +55,10 @@ class TestSimulateRemoval(TestCase):
 
         # no lit data for this input
         input_matrix = Matrices.grw
+        scenario = Scenario("test scenario", input_matrix, substance, treatment_train)
 
-        assert_that(simulate_removal).raises(RuntimeError).when_called_with(
-            treatment_train, substance, input_matrix
+        assert_that(simulate_removal).raises(ValueError).when_called_with(
+            scenario
         )
 
     def test_should_require_mixture_data(self):
@@ -67,30 +68,22 @@ class TestSimulateRemoval(TestCase):
         ])
         substance: Substance = Substances.pfoa
         input_matrix = Matrices.rww
+        scenario = Scenario("test scenario", input_matrix, substance, treatment_train)
 
         assert_that(simulate_removal).raises(ValueError).when_called_with(
-            treatment_train, substance, input_matrix
+            scenario
         )
 
     def test_should_use_cs_mixture_data(self):
         # TODO
-        treatment_train: TreatmentTrain = TreatmentTrain([
-            Treatments.wwt1,
-            Treatments.dilww,  # requires mixture
-        ])
         substance = Substances.pfoa
         input_matrix = Matrices.rww
-        scenario = "test scenario"
-        case_study = CaseStudy(
-            "test case",
-            mixtures=[
-                Mixture(1, 1, 1, 1, Treatments.dilww, Substances.pfoa, scenario)
-            ],
-            removal_percents=[],
-            references=[],
-            starting_concentration=[]
-        )
-        result = simulate_removal(treatment_train, substance, input_matrix, case_study=case_study, scenario=scenario)
+        treatment_train: TreatmentTrain = TreatmentTrain([
+            Treatments.wwt1,
+            Treatments.dilww.with_mixture(Mixture(1, 1, 1, 1)),
+        ])
+        scenario = Scenario("test scenario", input_matrix, substance, treatment_train)
+        result = simulate_removal(scenario)
 
         assert_that(result).is_instance_of(SimulationResult)
 
@@ -104,21 +97,12 @@ class TestSimulateRemoval(TestCase):
         ])
         substance: Substance = Substances.pfoa
         input_matrix = Matrices.rww
-        scenario = "test scenario"
         start_c = StartingConcentration(
             np.array([100]),  # we expect all the start_c samples == 100
-            substance, input_matrix
         )
-        case_study = CaseStudy(
-            "test case",
-            mixtures=[],
-            removal_percents=[],
-            references=[],
-            starting_concentration=[
-                start_c
-            ]
-        )
-        result = simulate_removal(treatment_train, substance, input_matrix, case_study=case_study, scenario=scenario)
+        scenario = Scenario("test scenario", input_matrix, substance, treatment_train, start_c)
+
+        result = simulate_removal(scenario)
 
         assert_that(result).is_instance_of(SimulationResult)
 
@@ -126,25 +110,17 @@ class TestSimulateRemoval(TestCase):
 
     def test_should_use_cs_removal(self):
         treatment_train: TreatmentTrain = TreatmentTrain([
-            Treatments.wwt1,
+            Treatments.wwt1.with_removal(
+                RemovalPercent(np.array([100, 100, 100]))
+            ),
         ])
         substance: Substance = Substances.pfoa
         input_matrix = Matrices.rww
-        scenario = "test scenario"
         start_c = StartingConcentration(
             np.array([100]),  # we expect all the start_c samples == 100
-            substance, input_matrix
         )
-        # we expect 0 in the output_c
-        rmv = RemovalPercent(np.array([100, 100, 100]), treatment_train[0], substance)
-        case_study = CaseStudy(
-            "test case",
-            mixtures=[],
-            removal_percents=[rmv],
-            references=[],
-            starting_concentration=[start_c]
-        )
-        result = simulate_removal(treatment_train, substance, input_matrix, case_study=case_study, scenario=scenario)
+        scenario = Scenario("test scenario", input_matrix, substance, treatment_train, start_c)
+        result = simulate_removal(scenario)
 
         assert_that(result).is_instance_of(SimulationResult)
 
@@ -152,25 +128,18 @@ class TestSimulateRemoval(TestCase):
 
     def test_that_treatment_can_be_without_lit_data(self):
         treatment_train: TreatmentTrain = TreatmentTrain([
-            Treatments.wwt1.without_lit_data(),
+            Treatments.wwt1.with_removal(
+                # we expect 0 in the output_c
+                RemovalPercent(np.array([100, 100, 100]))).without_lit_data(),
         ])
         substance: Substance = Substances.pfoa
         input_matrix = Matrices.rww
-        scenario = "test scenario"
         start_c = StartingConcentration(
             np.array([100]),  # we expect all the start_c samples == 100
-            substance, input_matrix
         )
-        # we expect 0 in the output_c
-        rmv = RemovalPercent(np.array([100, 100, 100]), treatment_train[0], substance)
-        case_study = CaseStudy(
-            "test case",
-            mixtures=[],
-            removal_percents=[rmv],
-            references=[],
-            starting_concentration=[start_c]
-        )
-        result = simulate_removal(treatment_train, substance, input_matrix, case_study=case_study, scenario=scenario)
+        scenario = Scenario("test scenario", input_matrix, substance, treatment_train, start_c)
+
+        result = simulate_removal(scenario)
 
         assert_that(result).is_instance_of(SimulationResult)
 

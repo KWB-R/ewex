@@ -18,6 +18,10 @@ class TreatmentGroup(Enum):
     NAP = "Natural Process"
     MIX = "Mixing and Separation"
 
+    @classmethod
+    def choices(cls):
+        return tuple((i.name, i.value) for i in cls)
+
 
 @dtc.dataclass
 class Treatment:

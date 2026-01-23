@@ -7,4 +7,3 @@ from .reference import *
 from .treatment import *
 from .removal_percent import *
 from .scenario import *
-from .case_study import *

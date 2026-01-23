@@ -16,3 +16,7 @@ venv/
 
 *.pickle
 *.xlsx
+
+data/
+qcra.db
+data.zip
