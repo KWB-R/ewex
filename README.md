@@ -1,6 +1,5 @@
-# promisces.hhea
-
-Human Health Exposure Assessment (HHEA) for Project PROMISCES
+# ewex
+Early warning chemical exposure assessment (EWEX)
 
 
 ## Installation
@@ -37,10 +36,10 @@ pip install jupyter
 
 ### literature data
 
-for `promisces` to work correctly, you'll need to put all the `.csv` of the literature data in a directory named `data/` at the top-level of the project's directory.
-Then, `promisces/` should look like this:
+for `ewex` to work correctly, you'll need to put all the `.csv` of the literature data in a directory named `data/` at the top-level of the project's directory.
+Then, `ewex/` should look like this:
 ```bash
-promisces.hhea/
+ewex/
   data/
     matrix_unique.csv
     process_removal_lit.csv
