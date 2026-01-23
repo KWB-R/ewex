@@ -4,7 +4,7 @@ import warnings
 
 import pandas as pd
 
-from hhea.models.matrix import Matrix
+from ewex.models.matrix import Matrix
 
 
 @dtc.dataclass

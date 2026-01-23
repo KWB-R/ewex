@@ -2,11 +2,11 @@ import dataclasses as dtc
 from itertools import product
 from typing import Iterator
 
-from hhea.models.matrix import Matrix
-from hhea.models.substance import Substance
-from hhea.models.treatment import TreatmentTrain
-from hhea.models.starting_concentration import StartingConcentration
-from hhea.models.reference import Reference
+from ewex.models.matrix import Matrix
+from ewex.models.substance import Substance
+from ewex.models.treatment import TreatmentTrain
+from ewex.models.starting_concentration import StartingConcentration
+from ewex.models.reference import Reference
 
 
 @dtc.dataclass
@@ -33,7 +33,7 @@ class Scenario:
                          n_runs: int = 10000,
                          rmv_factor_resolution: int = 1000,
                          ):
-        from hhea.simulate_removal import simulate_removal
+        from ewex.simulate_removal import simulate_removal
         return simulate_removal(
             self,
             n_runs,

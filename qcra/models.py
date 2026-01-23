@@ -1,6 +1,6 @@
 from django.db import models
 
-from hhea import SubstanceGroup, TreatmentGroup, Treatment, Reference, Substance, Matrix
+from ewex import SubstanceGroup, TreatmentGroup, Treatment, Reference, Substance, Matrix
 
 
 class SubstanceModel(models.Model):

@@ -1,8 +1,8 @@
 import dataclasses as dtc
 from enum import Enum
 
-import hhea.models.reference as reference_model
-import hhea.models.starting_concentration as sc_model
+import ewex.models.reference as reference_model
+import ewex.models.starting_concentration as sc_model
 
 
 class SubstanceGroup(Enum):

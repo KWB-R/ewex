@@ -6,9 +6,9 @@ from typing import Iterator
 
 import numpy as np
 
-import hhea.models.mixture as mixture_model
-import hhea.models.removal_percent as removal_model
-from hhea.models.matrix import Matrices, Matrix
+import ewex.models.mixture as mixture_model
+import ewex.models.removal_percent as removal_model
+from ewex.models.matrix import Matrices, Matrix
 
 
 class TreatmentGroup(Enum):

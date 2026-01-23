@@ -48,7 +48,7 @@ promisces.hhea/
     starting_concentration.csv
     substance_unique.csv
     treatment_unique.csv
-  hhea/
+  ewex/
     models/
       ...
     simulate_removals.py

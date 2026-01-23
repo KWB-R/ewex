@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand
-from hhea.models import *
+from ewex.models import *
 from qcra.models import SubstanceModel, MatrixModel, TreatmentModel, ReferenceConcentrationModel, RemovalReferenceModel
 import pandas as pd
 
