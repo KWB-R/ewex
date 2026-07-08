@@ -9,6 +9,7 @@ class SubstanceGroup(Enum):
     PFAS = "PFAS"
     iPMT = "iPM(T)"
     Pharmaceutical = "Pharmaceutical"
+    Pesticide = "Pesticide"
 
     @classmethod
     def choices(cls):
