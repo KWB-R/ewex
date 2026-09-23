@@ -1,5 +1,6 @@
 from __future__ import annotations
 import os
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -20,7 +21,7 @@ class RemovalPercent(ArrayContainer):
         if not treatment.with_lit_data:
             return RemovalPercent(np.array([]))
         df = pd.read_csv(
-            os.path.join("data", "process_removal_lit.csv"),
+            os.path.join(Path.cwd().parent, "data", "process_removal_lit.csv"),
             encoding='cp1252',
             sep=';',
             na_values="",

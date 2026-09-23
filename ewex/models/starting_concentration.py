@@ -1,5 +1,6 @@
 import os
 import warnings
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -15,7 +16,7 @@ class StartingConcentration(ArrayContainer):
 
     @staticmethod
     def from_lit(substance, matrix: Matrix) -> "StartingConcentration":
-        df = pd.read_csv(os.path.join("data", "starting_concentration.csv"),
+        df = pd.read_csv(os.path.join(Path.cwd().parent, "data", "starting_concentration.csv"),
                          encoding='cp1252',
                          sep=';',
                          na_values="",
