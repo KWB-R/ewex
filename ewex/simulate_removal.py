@@ -103,7 +103,6 @@ def simulate_removal(
     ):
         # fix input_c based on treatment id
         if treatment.id != "wwsl":
-            # TODO: CHECK SORTING
             input_c = np.flip(input_c)
         # dispatch to removal functions:
         if treatment.id.startswith("dil"):
@@ -119,15 +118,15 @@ def simulate_removal(
             )
         else:
             result = apply_generic_process(
-                input_c,
-                lit_rmv,
-                treatment.removal,
-                rmv_factor_resolution,
+                input_c = input_c,
+                lit_rmv = lit_rmv,
+                cs_rmv = treatment.removal,
+                percent_downtime = treatment.downtime,
+                rmv_factor_resolution = rmv_factor_resolution,
                 n_runs=n_runs
             )
 
         results += [result]
-        # TODO: CHECK SORTING
         input_c = np.sort(result.output_concentration)
 
     return SimulationResult(

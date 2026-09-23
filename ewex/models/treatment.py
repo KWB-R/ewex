@@ -33,6 +33,7 @@ class Treatment:
     output_matrix: Matrix
     with_lit_data: bool = True
     removal: removal_model.RemovalPercent | None = None
+    downtime: float = 0
     mixture: mixture_model.Mixture | None = None
 
     def __post_init__(self):
@@ -59,6 +60,12 @@ class Treatment:
             raise TypeError(f"Treatment '{self.id}' doesn't support setting its removal. "
                             f"It expects a Mixture object.")
         self.removal = removal
+        return self
+
+    def with_percent_downtime(self, percent):
+        if not 0 <= percent <= 100:
+            raise ValueError("downtime must be between 0 and 100")
+        self.downtime = percent
         return self
 
     def with_mixture(self, mixture: mixture_model.Mixture):
@@ -153,6 +160,12 @@ class Treatments:
     wwsl = Treatment("wwsl", TreatmentGroup.WWT,
                      "Combination of primary and secondary wastewater treatment: dewatered sludge",
                      [Matrices.rww, Matrices.hww], Matrices.sdg)
+    wwac = Treatment("wwac", TreatmentGroup.WWT,
+                     "Quaternary wastewater treatment: Granular activated carbon filtration",
+                     [Matrices.tww], Matrices.tww)
+    wwo3 = Treatment("wwo3", TreatmentGroup.WWT,
+                     "Quaternary wastewater treatment: Ozonation",
+                     [Matrices.tww], Matrices.tww)
     wetl = Treatment("wetl", TreatmentGroup.WWT, "Additional treatment: Constructed wetland",
                      [Matrices.rww, Matrices.iww, Matrices.hww, Matrices.stw, Matrices.tww, Matrices.lww],
                      Matrices.tww)
@@ -167,7 +180,11 @@ class Treatments:
                       Matrices.no_change)
     dilrw = Treatment("dilrw", TreatmentGroup.MIX, "Dilution by soil irrigation water",
                       [Matrices.suw, Matrices.tww, Matrices.stw, Matrices.sdg], Matrices.pow)
-    sepev = Treatment("sepev", TreatmentGroup.MIX, "Separation dueto evaporation", [Matrices.suw, Matrices.pow],
+    sepev = Treatment("sepev", TreatmentGroup.MIX, "Separation due to evaporation", [Matrices.suw, Matrices.pow],
+                      Matrices.no_change)
+    septr = Treatment("septr", TreatmentGroup.MIX, "Separation by treatment process",
+                      [Matrices.rww, Matrices.iww, Matrices.hww, Matrices.lww, Matrices.tww, Matrices.drw, Matrices.bfw,
+                       Matrices.grw, Matrices.suw, Matrices.raw, Matrices.stw, Matrices.tiw],
                       Matrices.no_change)
     npdgw = Treatment("npdgw", TreatmentGroup.NAP, "NaturalProcess: Degradation in surface water (biotic and abiotic)",
                       [Matrices.suw], Matrices.no_change)
@@ -185,12 +202,21 @@ class Treatments:
     dwae = Treatment("dwae", TreatmentGroup.DWT, "Drinking water treatment: aeration",
                      [Matrices.suw, Matrices.bfw, Matrices.grw, Matrices.drw, Matrices.tww, Matrices.stw],
                      Matrices.drw)
+    dwfl = Treatment("dwfl", TreatmentGroup.DWT, "Drinking water treatment: floatation",
+                     [Matrices.suw, Matrices.bfw, Matrices.grw, Matrices.drw, Matrices.tww, Matrices.stw],
+                     Matrices.drw)
     dwrf = Treatment("dwrf", TreatmentGroup.DWT, "Drinking water treatment: rapid filtration",
+                     [Matrices.suw, Matrices.bfw, Matrices.grw, Matrices.drw, Matrices.tww, Matrices.stw],
+                     Matrices.drw)
+    dwmf = Treatment("dwmf", TreatmentGroup.DWT, "Drinking water treatment: micro filtration",
                      [Matrices.suw, Matrices.bfw, Matrices.grw, Matrices.drw, Matrices.tww, Matrices.stw],
                      Matrices.drw)
     dwro = Treatment("dwro", TreatmentGroup.DWT, "Drinking water treatment: reverse osmosis",
                      [Matrices.suw, Matrices.bfw, Matrices.grw, Matrices.drw, Matrices.tww,
                       Matrices.stw], Matrices.drw)
+    dwrows = Treatment("dwrows", TreatmentGroup.DWT, "Wastestream of Drinking water treatment: reverse osmosis",
+                     [Matrices.suw, Matrices.bfw, Matrices.grw, Matrices.drw, Matrices.tww,
+                      Matrices.stw], Matrices.iww)
     dwcl = Treatment("dwcl", TreatmentGroup.DWT, "Drinking water treatment: chloride",
                      [Matrices.suw, Matrices.bfw, Matrices.grw, Matrices.drw,
                       Matrices.tww, Matrices.stw], Matrices.drw)

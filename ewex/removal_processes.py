@@ -67,7 +67,8 @@ def apply_generic_process(
         input_c: np.ndarray,
         lit_rmv: RemovalPercent,
         cs_rmv: RemovalPercent,
-        rmv_factor_resolution: int | float,
+        percent_downtime: int | float = 0,
+        rmv_factor_resolution: int | float = 1000,
         power: int | float = 100,
         n_runs: int = 10000
 ) -> ProcessResult:
@@ -132,7 +133,7 @@ def apply_generic_process(
 
     # TODO: CHECK SORTING
     input_c = np.sort(input_c)[::-1]
-    output_c = input_c * (1 - rmv_factor / 100)
+    output_c = input_c * (1 - rmv_factor/100) * (1 - percent_downtime/100) + input_c * percent_downtime/100
 
     return ProcessResult(
         ProcessType.generic,
