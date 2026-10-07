@@ -1,5 +1,4 @@
 import dataclasses as dtc
-from asyncio.windows_events import INFINITE
 from enum import Enum
 from numpy.random import choice
 
@@ -14,6 +13,7 @@ class ProcessType(Enum):
     mixture = "Mixture Process"
     separation = "Separation Process"
     separation_sludge = "Separation Sludge"
+    wastestream = "Waste Stream"
 
 
 class DominantDistribution(Enum):
@@ -26,10 +26,14 @@ class DominantDistribution(Enum):
 @dtc.dataclass
 class ProcessResult:
     process_type: ProcessType
+    input_concentration: np.ndarray
     output_concentration: np.ndarray
     rmv_factors: np.ndarray
     dominant_distribution: DominantDistribution
     average_out: bool
+    percent_downtime: float = None
+    main_flow_output: np.ndarray = None
+    recovery_rate: np.ndarray = None
 
 
 def to_likelihood(rmv_values: RemovalPercent, rmv_factor_resolution=1000):
@@ -80,11 +84,14 @@ def apply_generic_process(
     # print(cs_rmv.arr)
     # print("---------------------------")
     lit_rmv = np.where(lit_rmv < 0, 0, lit_rmv)
-    lit_rmv_factor, lit_lkl = to_likelihood(rmv_values=lit_rmv,
-                                            rmv_factor_resolution=rmv_factor_resolution)
-    cs_rmv_factor, cs_lkl = to_likelihood(rmv_values=cs_rmv,
-                                          rmv_factor_resolution=rmv_factor_resolution)
-
+    lit_rmv_factor, lit_lkl = to_likelihood(
+        rmv_values=lit_rmv,
+        rmv_factor_resolution=rmv_factor_resolution
+    )
+    cs_rmv_factor, cs_lkl = to_likelihood(
+        rmv_values=cs_rmv,
+        rmv_factor_resolution=rmv_factor_resolution
+    )
     # print(lit_lkl)
     # print(cs_lkl)
     prior_probs = prior_beta(power=power, rmv_factor_resolution=rmv_factor_resolution)
@@ -131,18 +138,19 @@ def apply_generic_process(
     else:
         av_out = True
 
-    # TODO: CHECK SORTING
     input_c = np.sort(input_c)[::-1]
     output_c = input_c * (1 - rmv_factor/100) * (1 - percent_downtime/100) + input_c * percent_downtime/100
 
     return ProcessResult(
         ProcessType.generic,
-        # TODO: CHECK SORTING
+        input_c,
         np.sort(output_c)[::-1], # not needed for calculations
         rmv_factor,
         dominant_distribution,
-        av_out
+        av_out,
+        percent_downtime
     )
+
 
 
 def apply_mixture_process(
@@ -168,7 +176,9 @@ def apply_mixture_process(
             size=n_runs
         )
 
-    if c2_sd == 0:
+    if (1 if isinstance(c2_mean, float) else len(c2_mean)) == n_runs:
+        c2_dist = np.array(c2_mean)
+    elif c2_sd == 0:
         c2_dist = np.array([c2_mean] * n_runs)
     else:
         if log_dist:
@@ -190,12 +200,48 @@ def apply_mixture_process(
     rmv_factor = (1 - output_c / input_c) * 100
     return ProcessResult(
         ProcessType.mixture,
-        np.sort(output_c)[::-1],
-        rmv_factor,
-        DominantDistribution.case_study,
+        input_concentration=input_c,
+        output_concentration=np.sort(output_c)[::-1],
+        rmv_factors=rmv_factor,
+        dominant_distribution=DominantDistribution.case_study,
         average_out=True
     )
 
+
+def apply_wastestream_process(
+        result: ProcessResult,
+        recovery_min: int | float = 0,
+        recovery_max: int | float = 100) -> ProcessResult:
+    """
+    calculates the substance concentration in a wastestream after a process defined only by a removal factor.
+    the removal factor has to be in %
+    """
+
+
+    n_runs = len(result.input_concentration)
+    percent_downtime = result.percent_downtime
+    c_in = result.input_concentration
+    rmv_factors = result.rmv_factors
+    r = np.random.uniform(recovery_min, recovery_max, n_runs) / 100
+    if not result.average_out:
+        rmv_factors = np.sort(rmv_factors)[::-1]
+        r = np.sort(r)[::-1]
+
+    c_out = (c_in * (1 - rmv_factors / 100) * (1 - percent_downtime / 100) +
+             c_in * percent_downtime / 100)
+    ws_output_c = (c_in / (1 - r)) - (c_out / (1 / r - 1))
+
+    return ProcessResult(
+        process_type=ProcessType.wastestream,
+        input_concentration=c_in,
+        output_concentration=ws_output_c,
+        rmv_factors=rmv_factors,
+        dominant_distribution=result.dominant_distribution,
+        average_out=result.average_out,
+        percent_downtime=percent_downtime,
+        main_flow_output=c_out,
+        recovery_rate=r * 100
+    )
 
 # case study specific data of separation processes are saved and loaded with "mixture" functions
 def apply_separation_process(input_c, x2_mean, x2_sd, c2_mean, c2_sd, distribution) -> ProcessResult:
@@ -230,6 +276,7 @@ def apply_separation_process(input_c, x2_mean, x2_sd, c2_mean, c2_sd, distributi
     rmv_factor = (1 - output_c / input_c) * 100
     return ProcessResult(
         ProcessType.mixture,
+        input_c,
         np.sort(output_c)[::-1],
         rmv_factor,
         DominantDistribution.case_study,
@@ -274,6 +321,7 @@ def apply_separation_sludge_process(
     rmv_factor = (1 - output_c / input_c) * 100
     return ProcessResult(
         ProcessType.separation_sludge,
+        input_c,
         np.sort(output_c)[::-1],
         rmv_factor,
         result.dominant_distribution,

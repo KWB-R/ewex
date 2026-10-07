@@ -18,6 +18,7 @@ class TreatmentGroup(Enum):
     SWT = "Surface Water"
     NAP = "Natural Process"
     MIX = "Mixing and Separation"
+    WAS = "Waste Stream"
 
     @classmethod
     def choices(cls):
@@ -35,6 +36,8 @@ class Treatment:
     removal: removal_model.RemovalPercent | None = None
     downtime: float = 0
     mixture: mixture_model.Mixture | None = None
+    wastestream: bool = False
+    recovery: list[float] = dtc.field(default_factory=lambda: [0.0, 0.0])
 
     def __post_init__(self):
         if Matrices.no_change in self.input_matrix:
@@ -75,6 +78,14 @@ class Treatment:
         self.mixture = mixture
         return self
 
+    def to_wastestream(self, recovery_min = 0, recovery_max = 100):
+        if not (0 <= recovery_min <= 100 and 0 <= recovery_max <= 100):
+            raise ValueError("Recovery must be between 0 and 100")
+        self.wastestream = True
+        self.recovery = [recovery_min, recovery_max]
+        self.output_matrix = Matrices.iww
+        return self
+
     def clone(
             self,
             id: str | None = None,
@@ -83,6 +94,7 @@ class Treatment:
             output_matrix: Matrix | None = None,
             with_lit_data: bool | None = None,
             removal: removal_model.RemovalPercent | None = None,
+            downtime: float = 0.0,
             mixture: mixture_model.Mixture | None = None
     ):
         id = id or self.id
@@ -92,7 +104,18 @@ class Treatment:
         with_lit_data = with_lit_data if with_lit_data is not None else self.with_lit_data
         removal = removal or self.removal
         mixture = mixture or self.mixture
-        return Treatment(id, self.group, name, input_matrix, output_matrix, with_lit_data, removal, mixture)
+        downtime = downtime or self.downtime
+        return Treatment(
+            id,
+            self.group,
+            name,
+            input_matrix,
+            output_matrix,
+            with_lit_data,
+            removal,
+            downtime,
+            mixture
+        )
 
     def __hash__(self):
         return hash(self.id)
@@ -172,7 +195,7 @@ class Treatments:
     dilsw = Treatment("dilsw", TreatmentGroup.MIX, "Dilution by surface water", [Matrices.tww, Matrices.stw],
                       Matrices.suw)
     dilww = Treatment("dilww", TreatmentGroup.MIX, "Dilution by household wastewater",
-                      [Matrices.iww, Matrices.lww, Matrices.rww, Matrices.tww], Matrices.rww)
+                      [Matrices.hww, Matrices.iww, Matrices.lww, Matrices.rww, Matrices.tww], Matrices.rww)
     dilgw = Treatment("dilgw", TreatmentGroup.MIX, "Dilution by groundwater", [Matrices.bfw, Matrices.pow, Matrices.grw],
                       Matrices.grw)
     dilpr = Treatment("dilpr", TreatmentGroup.MIX, "Dilution by process water (from minor secondary stream)",
@@ -181,10 +204,6 @@ class Treatments:
     dilrw = Treatment("dilrw", TreatmentGroup.MIX, "Dilution by soil irrigation water",
                       [Matrices.suw, Matrices.tww, Matrices.stw, Matrices.sdg], Matrices.pow)
     sepev = Treatment("sepev", TreatmentGroup.MIX, "Separation due to evaporation", [Matrices.suw, Matrices.pow],
-                      Matrices.no_change)
-    septr = Treatment("septr", TreatmentGroup.MIX, "Separation by treatment process",
-                      [Matrices.rww, Matrices.iww, Matrices.hww, Matrices.lww, Matrices.tww, Matrices.drw, Matrices.bfw,
-                       Matrices.grw, Matrices.suw, Matrices.raw, Matrices.stw, Matrices.tiw],
                       Matrices.no_change)
     npdgw = Treatment("npdgw", TreatmentGroup.NAP, "NaturalProcess: Degradation in surface water (biotic and abiotic)",
                       [Matrices.suw], Matrices.no_change)

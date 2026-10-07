@@ -10,9 +10,9 @@ from ewex.removal_processes import (
     apply_generic_process,\
     apply_mixture_process,\
     apply_separation_process,\
-    apply_separation_sludge_process
+    apply_separation_sludge_process, \
+    apply_wastestream_process
 )
-
 
 @dtc.dataclass
 class SimulationResult:
@@ -93,7 +93,10 @@ def simulate_removal(
             raise RuntimeError("No starting concentration found in the literature for"
                                f" substance {substance.id} and input matrix {input_matrix.id}.\n"
                                f"Please provide one or try an other substance/matrix pair.")
-    start_c = input_c = starting_concentration.n_uniform_samples(n_runs)
+    if len(starting_concentration) == n_runs:
+        start_c = input_c = starting_concentration.n_array_samples(n_runs)
+    else:
+        start_c = input_c = starting_concentration.n_uniform_samples(n_runs)
 
     lit_removals = [RemovalPercent.from_lit(treatment, substance) for treatment in treatment_train]
 
@@ -101,6 +104,7 @@ def simulate_removal(
     for i, (treatment, lit_rmv) in enumerate(
             zip(treatment_train, lit_removals)
     ):
+
         # fix input_c based on treatment id
         if treatment.id != "wwsl":
             input_c = np.flip(input_c)
@@ -124,6 +128,13 @@ def simulate_removal(
                 percent_downtime = treatment.downtime,
                 rmv_factor_resolution = rmv_factor_resolution,
                 n_runs=n_runs
+            )
+
+        if treatment.wastestream:
+            result = apply_wastestream_process(
+                result=result,
+                recovery_min=treatment.recovery[0],
+                recovery_max=treatment.recovery[1]
             )
 
         results += [result]

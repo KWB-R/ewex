@@ -13,7 +13,6 @@ import ewex.models.treatment as treatment_model
 
 @dtc.dataclass
 class RemovalPercent(ArrayContainer):
-
     arr: np.ndarray
 
     @staticmethod

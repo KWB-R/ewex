@@ -123,3 +123,4 @@ class Substances:
     dep = Substance("dep", SubstanceGroup.iPMT, "diethylphthalate", "84-66-2")
     dbp = Substance("dbp", SubstanceGroup.iPMT, "dibuthylphthalate", "84-74-2")
     diuron = Substance("diuron", SubstanceGroup.iPMT, "diuron", "330-54-1")
+    tra = Substance("tra", SubstanceGroup.Pharmaceutical, "Tramadol", "27203-92-5")

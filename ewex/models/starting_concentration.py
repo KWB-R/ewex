@@ -37,5 +37,7 @@ class StartingConcentration(ArrayContainer):
         return StartingConcentration(lit_values[~np.isnan(lit_values)])
 
     def n_uniform_samples(self, n_samples: int):
-        # TODO: CHECK SORTING
         return np.sort(np.random.uniform(self.arr.min(), self.arr.max(), n_samples))[::-1]
+
+    def n_array_samples(self, n_samples: int):
+        return np.sort(np.random.choice(self, size=n_samples, replace=False))[::-1]
