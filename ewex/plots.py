@@ -1,5 +1,7 @@
 import math
 from math import pi
+import warnings
+
 
 import numpy as np
 import pandas as pd
@@ -18,8 +20,17 @@ def er_profiles(
         c_scale: str | None = None,
         color_palette: list = ["Grays"],
         font_size: int = 12,
-        reference_value: float | None = True
+        reference_value: bool | None = True
 ):
+    scenario_names = [r.scenario.name for r in sim_results]
+    seen = set()
+    for i, scenario_name in enumerate(scenario_names):
+        if scenario_name in seen:
+            sim_results[i].scenario.name = scenario_name + "_2"
+            warnings.warn("Warning: " + scenario_name + " is used multiple times as scenario name.")
+        else:
+            seen.add(scenario_name)
+
     output_c_df = pd.concat([r.output_c_df.assign(scenario=r.scenario.name) for r in sim_results])
     output_c_df = pd.melt(output_c_df, id_vars="scenario")
     if reference_value is not None:
@@ -27,7 +38,7 @@ def er_profiles(
     substance_name = sim_results[0].scenario.substance.name
     # set the scale for concentration y axis
     max_c = output_c_df.max(numeric_only=True).max()
-    if (reference_value is not None and c_scale is not None):
+    if reference_value is not None and c_scale is not None:
         if (max_c / reference_value) > 100:
             c_scale = "log"
     else:
@@ -132,8 +143,8 @@ def spider_plot(
     percentiles = [0.50, 0.75, 0.95, 0.99]
     stats = output_c_df.describe(percentiles)
     categories = stats.columns
-    N = len(categories)
-    angles = np.linspace(0, 2 * pi, N, endpoint=False)
+    n_cat = len(categories)
+    angles = np.linspace(0, 2 * pi, n_cat, endpoint=False)
     fig = plt.figure(figsize=(8, 9))
     ax = plt.subplot(111, polar=True)
     fig.patch.set_facecolor("white")
@@ -145,8 +156,8 @@ def spider_plot(
     ax.set_xticklabels(categories, fontweight='bold', fontsize=12)
     ax.xaxis.set_minor_locator(FixedLocator(angles))
 
-    XTICKS = ax.xaxis.get_major_ticks()
-    for tick in XTICKS:
+    x_ticks = ax.xaxis.get_major_ticks()
+    for tick in x_ticks:
         tick.set_pad(15)
     y_max = math.ceil(stats.loc['50%'].max())
     ax.set_ylim(0, y_max)
@@ -162,7 +173,7 @@ def spider_plot(
 
     intervals = [0.1, 1, 5, 10]
     colors = ['#2ED812', '#AEFF00', '#F4EF34', '#FC8604', '#FF4A37']
-    bar_width = 2 * np.pi / N
+    bar_width = 2 * np.pi / n_cat
 
     # 99percentile 
     start_y = yticks[0]
