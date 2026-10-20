@@ -10,6 +10,7 @@ class SubstanceGroup(Enum):
     iPMT = "iPM(T)"
     Pharmaceutical = "Pharmaceutical"
     Pesticide = "Pesticide"
+    Nutrient = "Nutrient"
 
     @classmethod
     def choices(cls):
@@ -124,3 +125,8 @@ class Substances:
     dbp = Substance("dbp", SubstanceGroup.iPMT, "dibuthylphthalate", "84-74-2")
     diuron = Substance("diuron", SubstanceGroup.iPMT, "diuron", "330-54-1")
     tra = Substance("tra", SubstanceGroup.Pharmaceutical, "Tramadol", "27203-92-5")
+    EDTA = Substance("EDTA", SubstanceGroup.Pharmaceutical, "Ethylenediaminetetraacetic acid", "60-00-4")
+    hibu = Substance("2hibu", SubstanceGroup.Pharmaceutical, "2-Hydroxyibuprofen", "51146-55-5")
+    tea = Substance("tea", SubstanceGroup.iPMT, "Triethanolamine", "102-71-6")
+    tn = Substance("tn", SubstanceGroup.Nutrient, "Total Nitrogen", "-")
+    tp = Substance("tp", SubstanceGroup.Nutrient, "Total Phosphorus", "x")
