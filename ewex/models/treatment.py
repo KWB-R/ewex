@@ -169,29 +169,26 @@ class Treatments:
                      [Matrices.rww, Matrices.iww, Matrices.hww, Matrices.stw, Matrices.lww], Matrices.tww)
     wwco = Treatment("wwco", TreatmentGroup.WWT, "Tertiary wastewater treatment: Coagulation and filtration",
                      [Matrices.tww, Matrices.iww], Matrices.tww)
-    wwel = Treatment("wwel", TreatmentGroup.WWT, "Tertiary wastewater treatment: Electro-oxidation (e-peroxone)",
-                     [Matrices.tww, Matrices.iww], Matrices.tww)
-    wwuf = Treatment("wwuf", TreatmentGroup.WWT, "Tertiary wastewater treatment: Ultrafiltration",
-                     [Matrices.tww, Matrices.iww], Matrices.tww)
-    wwnf = Treatment("wwnf", TreatmentGroup.WWT, "Tertiary wastewater treatment: Nanofiltration",
-                     [Matrices.tww, Matrices.iww], Matrices.tww)
-    wwro = Treatment("wwro", TreatmentGroup.WWT, "Tertiary wastewater treatment: Reverse Osmosis",
-                     [Matrices.tww, Matrices.iww], Matrices.tww)
     wwmb = Treatment("wwmb", TreatmentGroup.WWT, "Tertiary wastewater treatment: Membrane bioreactor",
                      [Matrices.rww, Matrices.iww, Matrices.hww, Matrices.stw, Matrices.tww, Matrices.lww],
                      Matrices.tww)
-    wwsl = Treatment("wwsl", TreatmentGroup.WWT,
-                     "Combination of primary and secondary wastewater treatment: dewatered sludge",
-                     [Matrices.rww, Matrices.hww], Matrices.sdg)
-    wwac = Treatment("wwac", TreatmentGroup.WWT,
-                     "Quaternary wastewater treatment: Granular activated carbon filtration",
+    wwac = Treatment("wwac", TreatmentGroup.WWT, "Quaternary wastewater treatment: Granular activated carbon filtration",
                      [Matrices.tww], Matrices.tww)
-    wwo3 = Treatment("wwo3", TreatmentGroup.WWT,
-                     "Quaternary wastewater treatment: Ozonation",
+    wwo3 = Treatment("wwo3", TreatmentGroup.WWT, "Quaternary wastewater treatment: Ozonation",
                      [Matrices.tww], Matrices.tww)
+    wwel = Treatment("wwel", TreatmentGroup.WWT, "Advanced wastewater treatment: Electro-oxidation (e-peroxone)",
+                     [Matrices.tww, Matrices.iww], Matrices.tww)
+    wwuf = Treatment("wwuf", TreatmentGroup.WWT, "Advanced wastewater treatment: Ultrafiltration",
+                     [Matrices.tww, Matrices.iww], Matrices.tww)
+    wwnf = Treatment("wwnf", TreatmentGroup.WWT, "Advanced wastewater treatment: Nanofiltration",
+                     [Matrices.tww, Matrices.iww], Matrices.tww)
+    wwro = Treatment("wwro", TreatmentGroup.WWT, "Advanced wastewater treatment: Reverse Osmosis",
+                     [Matrices.tww, Matrices.iww], Matrices.tww)
     wetl = Treatment("wetl", TreatmentGroup.WWT, "Additional treatment: Constructed wetland",
                      [Matrices.rww, Matrices.iww, Matrices.hww, Matrices.stw, Matrices.tww, Matrices.lww],
                      Matrices.tww)
+    wwsl = Treatment("wwsl", TreatmentGroup.WWT, "Combination of primary and secondary wastewater treatment: dewatered sludge",
+                     [Matrices.rww, Matrices.hww], Matrices.sdg)
     dilsw = Treatment("dilsw", TreatmentGroup.MIX, "Dilution by surface water", [Matrices.tww, Matrices.stw],
                       Matrices.suw)
     dilww = Treatment("dilww", TreatmentGroup.MIX, "Dilution by household wastewater",
@@ -209,7 +206,8 @@ class Treatments:
                       [Matrices.suw], Matrices.no_change)
     npdgg = Treatment("npdgg", TreatmentGroup.NAP, "NaturalProcess: Degradation in groundwater (biotic and abiotic)",
                       [Matrices.grw], Matrices.no_change)
-    npbk = Treatment("npbk", TreatmentGroup.NAP, "Natural Process: Bank filtration", [Matrices.suw], Matrices.bfw)
+    npbk = Treatment("npbk", TreatmentGroup.NAP, "Natural Process: Bank filtration",
+                     [Matrices.suw], Matrices.bfw)
     npdgs = Treatment("npdgs", TreatmentGroup.NAP, "NaturalProcess: Degradation in soil(biotic and abiotic)",
                       [Matrices.pow], Matrices.no_change)
     dwex = Treatment("dwex", TreatmentGroup.DWT, "Drinking water treatment: anion exchange",
@@ -233,9 +231,6 @@ class Treatments:
     dwro = Treatment("dwro", TreatmentGroup.DWT, "Drinking water treatment: reverse osmosis",
                      [Matrices.suw, Matrices.bfw, Matrices.grw, Matrices.drw, Matrices.tww,
                       Matrices.stw], Matrices.drw)
-    dwrows = Treatment("dwrows", TreatmentGroup.DWT, "Wastestream of Drinking water treatment: reverse osmosis",
-                     [Matrices.suw, Matrices.bfw, Matrices.grw, Matrices.drw, Matrices.tww,
-                      Matrices.stw], Matrices.iww)
     dwcl = Treatment("dwcl", TreatmentGroup.DWT, "Drinking water treatment: chloride",
                      [Matrices.suw, Matrices.bfw, Matrices.grw, Matrices.drw,
                       Matrices.tww, Matrices.stw], Matrices.drw)
@@ -261,7 +256,10 @@ class Treatments:
                      "Drinking water treatment: pretreatment with pre disinfection (chlorine)",
                      [Matrices.suw, Matrices.bfw, Matrices.grw, Matrices.drw, Matrices.tww, Matrices.stw],
                      Matrices.drw)
-    dwco = Treatment("dwco", TreatmentGroup.DWT, "Drinking water treatment: coagulation and flocculation",
+    dwcf = Treatment("dwcf", TreatmentGroup.DWT, "Drinking water treatment: coagulation and flocculation",
+                     [Matrices.suw, Matrices.bfw, Matrices.grw, Matrices.drw, Matrices.tww, Matrices.stw],
+                     Matrices.drw)
+    dwco = Treatment("dwco", TreatmentGroup.DWT, "Drinking water treatment: coagulation and filtration",
                      [Matrices.suw, Matrices.bfw, Matrices.grw, Matrices.drw, Matrices.tww, Matrices.stw],
                      Matrices.drw)
     grpz = Treatment("grpz", TreatmentGroup.GWT,
