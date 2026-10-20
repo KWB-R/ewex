@@ -176,7 +176,7 @@ def apply_mixture_process(
             size=n_runs
         )
 
-    if (1 if isinstance(c2_mean, float) else len(c2_mean)) == n_runs:
+    if (1 if isinstance(c2_mean, (float, int)) else len(c2_mean)) == n_runs:
         c2_dist = np.array(c2_mean)
     elif c2_sd == 0:
         c2_dist = np.array([c2_mean] * n_runs)
