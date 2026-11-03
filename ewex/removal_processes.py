@@ -197,7 +197,12 @@ def apply_mixture_process(
             )
 
     output_c = input_c * (1 - x2_dist) + c2_dist * x2_dist
-    rmv_factor = (1 - output_c / input_c) * 100
+    if any(input_c > 0):
+        rmv_factor = (1 - output_c / input_c) * 100
+    else:
+        # to visualize a concentrating process (negative removal) input_c needs be slightly above 0
+        # Therefore, 10E-09 of the output_concentration is added
+        rmv_factor = (1 - output_c / (input_c + output_c/1000000000)) * 100
     return ProcessResult(
         ProcessType.mixture,
         input_concentration=input_c,

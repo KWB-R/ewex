@@ -148,6 +148,12 @@ class TreatmentTrain:
             out_mat = t.get_output_matrix(out_mat)
         return out_mat
 
+    def show_treatment_ids(self) -> list:
+        t_ids = []
+        for i, treatment in enumerate(self):
+            t_ids += [self.treatments[i].id]
+        return t_ids
+
     def __getitem__(self, item) -> Treatment:
         return self.treatments[item]
 
@@ -191,15 +197,17 @@ class Treatments:
                      [Matrices.rww, Matrices.hww], Matrices.sdg)
     dilsw = Treatment("dilsw", TreatmentGroup.MIX, "Dilution by surface water", [Matrices.tww, Matrices.stw],
                       Matrices.suw)
-    dilww = Treatment("dilww", TreatmentGroup.MIX, "Dilution by household wastewater",
+    dilww = Treatment("dilww", TreatmentGroup.MIX, "Mixing with household wastewater",
                       [Matrices.hww, Matrices.iww, Matrices.lww, Matrices.rww, Matrices.tww], Matrices.rww)
     dilgw = Treatment("dilgw", TreatmentGroup.MIX, "Dilution by groundwater", [Matrices.bfw, Matrices.pow, Matrices.grw],
                       Matrices.grw)
-    dilpr = Treatment("dilpr", TreatmentGroup.MIX, "Dilution by process water (from minor secondary stream)",
+    dilpr = Treatment("dilpr", TreatmentGroup.MIX, "Mixing with process water (from minor secondary stream)",
                       [Matrices.tww, Matrices.iww, Matrices.hww, Matrices.rww, Matrices.lww, Matrices.drw],
                       Matrices.no_change)
     dilrw = Treatment("dilrw", TreatmentGroup.MIX, "Dilution by soil irrigation water",
                       [Matrices.suw, Matrices.tww, Matrices.stw, Matrices.sdg], Matrices.pow)
+    dilbr = Treatment("dilbr", TreatmentGroup.MIX, "Mixing with Brine",
+                      [Matrices.suw, Matrices.tww, Matrices.stw, Matrices.sdg], Matrices.no_change)
     sepev = Treatment("sepev", TreatmentGroup.MIX, "Separation due to evaporation", [Matrices.suw, Matrices.pow],
                       Matrices.no_change)
     npdgw = Treatment("npdgw", TreatmentGroup.NAP, "NaturalProcess: Degradation in surface water (biotic and abiotic)",

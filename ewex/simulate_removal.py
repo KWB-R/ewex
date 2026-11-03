@@ -4,7 +4,7 @@ import pandas as pd
 
 from ewex.models.removal_percent import RemovalPercent
 from ewex.models.starting_concentration import StartingConcentration
-from ewex.models.scenario import Scenario
+from ewex.models.exposure_scenario import ExposureScenario
 from ewex.removal_processes import (
     ProcessResult,
     apply_generic_process,\
@@ -16,7 +16,7 @@ from ewex.removal_processes import (
 
 @dtc.dataclass
 class SimulationResult:
-    scenario: Scenario
+    exposure_scenario: ExposureScenario
     n_runs: int
     rmv_factor_resolution: int
     starting_concentration: np.ndarray
@@ -29,7 +29,7 @@ class SimulationResult:
     @property
     def output_c_df(self):
         df = dict(input=self.starting_concentration)
-        for result, treatment in zip(self.intermediate_results, self.scenario.treatment_train):
+        for result, treatment in zip(self.intermediate_results, self.exposure_scenario.treatment_train):
             df.update({treatment.id: result.output_concentration})
         return pd.DataFrame(df)
 
@@ -37,23 +37,23 @@ class SimulationResult:
     def rmv_factor_df(self):
         return pd.DataFrame({
             treatment.id: result.rmv_factors
-            for result, treatment in zip(self.intermediate_results, self.scenario.treatment_train)
+            for result, treatment in zip(self.intermediate_results, self.exposure_scenario.treatment_train)
         })
 
     @property
     def treatment_df(self):
-        in_mat, out_mat = [self.scenario.input_matrix], []
-        for treatment in self.scenario.treatment_train:
+        in_mat, out_mat = [self.exposure_scenario.input_matrix], []
+        for treatment in self.exposure_scenario.treatment_train:
             out_mat += [treatment.get_output_matrix(in_mat[-1])]
             in_mat += [out_mat[-1]]
         in_mat = in_mat[:-1]
         return pd.DataFrame(dict(
-            treatment_id=[t.id for t in self.scenario.treatment_train],
+            treatment_id=[t.id for t in self.exposure_scenario.treatment_train],
             average_out=[r.average_out for r in self.intermediate_results],
             input_matrix=[m.name for m in in_mat],
             output_matrix=[m.name for m in out_mat],
             dominant_data=[r.dominant_distribution.value for r in self.intermediate_results],
-            substance=self.scenario.substance.name,
+            substance=self.exposure_scenario.substance.name,
             n_runs=self.n_runs,
             removal_factor_resolution=self.rmv_factor_resolution,
 
@@ -70,17 +70,18 @@ class SimulationResult:
             ).T.to_excel(excel_writer, sheet_name='removal', index=False)
 
 
+
+
 def simulate_removal(
-        scenario: Scenario,
+        scenario: ExposureScenario,
         n_runs: int = 10000,
         rmv_factor_resolution: int = 1000,
 ) -> SimulationResult:
-    input_matrix, substance, treatment_train, starting_concentration, reference = \
+    input_matrix, substance, treatment_train, starting_concentration = \
         scenario.input_matrix, \
         scenario.substance, \
         scenario.treatment_train, \
-        scenario.starting_concentration, \
-        scenario.reference
+        scenario.starting_concentration
 
     treatment_train.validate_matrices(input_matrix)
     treatment_train.validate_mixtures()

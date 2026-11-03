@@ -6,4 +6,5 @@ from .substance import *
 from .reference import *
 from .treatment import *
 from .removal_percent import *
-from .scenario import *
+from .exposure_scenario import *
+from .impact_scenario import *

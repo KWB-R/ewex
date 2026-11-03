@@ -3,6 +3,7 @@ from enum import Enum
 
 import ewex.models.reference as reference_model
 import ewex.models.starting_concentration as sc_model
+from ewex.models.hazard_group import Equivalence, HazardGroup
 
 
 class SubstanceGroup(Enum):
@@ -25,6 +26,9 @@ class Substance:
     CAS: str
     starting_concentration: sc_model.StartingConcentration | None = None
     reference: reference_model.Reference | None = None
+    equivalence_factor: Equivalence | None = None
+    hazard_group: HazardGroup | None = None
+
 
     def with_starting_concentration(self, starting_concentration: sc_model.StartingConcentration):
         self.starting_concentration = starting_concentration
@@ -34,8 +38,17 @@ class Substance:
         self.reference = reference
         return self
 
+    def with_substance_equivalence(self, equivalence_factor: Equivalence):
+        self.equivalence_factor = equivalence_factor
+        return self
+
+    def in_hazard_group(self, hazard_group: HazardGroup):
+        self.hazard_group = hazard_group
+        return self
+
     def __hash__(self):
         return hash(self.id)
+
 
 
 class Substances:
@@ -116,6 +129,11 @@ class Substances:
     pfo4da = Substance("pfo4da", SubstanceGroup.PFAS, "PFO4DA,Perfluoro-3,5,7,9-butaoxadecanoic acid", "39492-90-5")
     genx = Substance("genx", SubstanceGroup.PFAS, "GenX, ,3,3,3-tetrafluoro-2-(heptafluoropropoxy) propanoate",
                      "62037-80-3")
+    pfoda = Substance("pfoda", SubstanceGroup.PFAS, "Perfluorooctadecanoic acid", "16517-11-6")
+    pfhxda = Substance("pfhxda", SubstanceGroup.PFAS, "Perfluorohexadecanoic acid", "67905-19-5")
+    c6o4 = Substance("c6o4", SubstanceGroup.PFAS, "2,2-difluoro-2-((2,2,4,5-tetrafluoro-5-(trifluoromethoxy)-1,3-dioxolan-4-yl)oxy)acetic acid",
+                     "1190931-41-9")
+    tfa = Substance("tfa", SubstanceGroup.PFAS, "Trifluoroacetic acid", "76-05-1")
     _14_d = Substance("_14_d", SubstanceGroup.iPMT, "1,4-dioxane", "123-91-1")
     benzo = Substance("benzo", SubstanceGroup.iPMT, "Benzotriazole,1H-1,2,3-benzotriazole", "95-14-7")
     bpa = Substance("bpa", SubstanceGroup.iPMT, "Bisphenol A, 4,4'-(propan-2,2-diil)difenolo", "80-05-7")

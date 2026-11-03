@@ -2,7 +2,6 @@ import math
 from math import pi
 import warnings
 
-
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt, patches as mpatches
@@ -10,135 +9,191 @@ import seaborn as sns
 from matplotlib.ticker import FixedLocator
 
 from ewex.simulate_removal import SimulationResult
+from ewex.asses_impact import MixtureAssessmentResult, AssessmentResult
 
 
-def er_profiles(
-        sim_results: list[SimulationResult],
-        case_study_name: str | None = None,
+def concentration_profile(
+        sim_result: SimulationResult,
+        title: str | None = None,
         save_as: str | None = None,
-        no_mixture: bool = True,
         c_scale: str | None = None,
-        color_palette: list = ["Grays"],
+        color: str = '#DC540C',
+        unit: str = "ng/L",
         font_size: int = 12,
-        reference_value: bool | None = True
+        reference_value: float | None = None
 ):
-    scenario_names = [r.scenario.name for r in sim_results]
-    seen = set()
-    for i, scenario_name in enumerate(scenario_names):
-        if scenario_name in seen:
-            sim_results[i].scenario.name = scenario_name + "_2"
-            warnings.warn("Warning: " + scenario_name + " is used multiple times as scenario name.")
-        else:
-            seen.add(scenario_name)
+    substance_name = sim_result.exposure_scenario.substance.name
+    if title is None:
+        title = sim_result.exposure_scenario.name
 
-    output_c_df = pd.concat([r.output_c_df.assign(scenario=r.scenario.name) for r in sim_results])
-    output_c_df = pd.melt(output_c_df, id_vars="scenario")
-    if reference_value is not None:
-        reference_value = sim_results[0].scenario.reference.ref_value_ng_l
-    substance_name = sim_results[0].scenario.substance.name
-    # set the scale for concentration y axis
-    max_c = output_c_df.max(numeric_only=True).max()
-    if reference_value is not None and c_scale is not None:
+    output_c_df = pd.melt(sim_result.output_c_df)
+
+    if reference_value is not None and c_scale is None:
+        max_c = output_c_df.max(numeric_only=True).max()
         if (max_c / reference_value) > 100:
             c_scale = "log"
-    else:
+        else:
+            c_scale = "linear"
+
+    if c_scale is None:
         c_scale = "linear"
 
-    if len(color_palette) == 1:
-        color_palette = color_palette[0]
+    plt.figure(
+        figsize=(1.2 * len(sim_result.exposure_scenario.treatment_train),
+                 len(sim_result.exposure_scenario.treatment_train)))
 
-    fig = plt.figure(
-        figsize=(4 + len(sim_results) * len(sim_results[0].scenario.treatment_train) / (1 + int(len(sim_results) > 1)),
-                 4 + len(sim_results) * len(sim_results[0].scenario.treatment_train) / (1 + int(len(sim_results) > 1))))
-    gs = fig.add_gridspec(2, height_ratios=[1, 2])
-    axs = gs.subplots()
-
-    # Negative removal should be displayed reverse (input concentration / output Concentration),
-    # so that every process is between 0 and 100%
-    # maybe displayed in another color
-    # not implemented yet!!!!!
-    sns.violinplot(
-        x="variable", y="value",
+    ax = sns.violinplot(
+        x="variable",
+        y="value",
         data=output_c_df,
-        hue="scenario",
-        # color=np.random.choice(["silver", "orange", "yellow", "blue"]),
+        color=color,
         cut=0,
         density_norm="width",
         inner=None,
-        saturation=1,
-        palette=color_palette,
-        ax=axs[0],
-        legend="brief" if len(sim_results) > 1 else False
+        saturation=1
     )
 
-    if len(sim_results) > 1:
-        plt.setp(axs[0].get_legend().get_texts(), fontsize=font_size)
-        plt.setp(axs[0].get_legend().get_title(), fontsize=font_size)
+
     plt.xticks(fontsize=font_size, rotation=0)
     plt.yticks(fontsize=font_size, rotation=0)
 
-    axs[0].set_title(f"At CS: '{case_study_name}'" if case_study_name is not None else "")
-    axs[0].set_ylabel(substance_name + " (ng/L)", fontsize=font_size)
+    ax.set_title(title, fontsize = font_size + 2)
+    ax.set_ylabel(substance_name + " (" + unit + ")", fontsize=font_size)
     if reference_value is not None:
-        axs[0].axhline(y=reference_value, color='black', linestyle='--')
-    axs[0].set_xlabel('Treatment step outlet', fontsize=font_size)
-    axs[0].set_yscale(c_scale)
+        ax.axhline(y=reference_value, color='black', linestyle='--')
+        ax.annotate(
+            "Reference value",
+            xy=(0.02, reference_value),
+            xycoords=ax.get_yaxis_transform(),
+            xytext=(0, 4),
+            textcoords="offset points",
+            ha="left",
+            va="bottom",
+            fontsize=font_size
+        )
+    ax.set_xlabel('Treatment step outlet', fontsize=font_size)
+    ax.set_yscale(c_scale)
 
-    rmv_factor_df = pd.concat([r.rmv_factor_df.assign(scenario=r.scenario.name) for r in sim_results])
+    if save_as is not None:
+        plt.savefig(save_as, dpi=300, bbox_inches = "tight")
+        plt.close()
+
+
+
+def removal_profile(
+    sim_results: list[SimulationResult],
+    no_mixture: bool = True,
+    long_substance_name: bool = True,
+    save_as: str | None = None,
+    color_palette: str | list = "viridis",
+    font_size: int = 12
+):
+    if isinstance(sim_results, SimulationResult):
+        sim_results = [sim_results]
+        
+    rmv_factor_df = pd.concat([r.rmv_factor_df.assign(
+        scenario=r.exposure_scenario.name,
+        sub_name=r.exposure_scenario.substance.name,
+        sub_id=r.exposure_scenario.substance.id) for r in sim_results])
     if no_mixture:
         mixture_columns = [rmv_factor_df.columns.get_loc(col) for col in rmv_factor_df.columns if "dil" in col]
         rmv_factor_df = rmv_factor_df.drop(rmv_factor_df.columns[mixture_columns], axis=1)
-    rmv_factor_df = pd.melt(rmv_factor_df, id_vars="scenario")
 
-    sns.violinplot(
+    rmv_factor_df = pd.melt(rmv_factor_df, id_vars=["scenario", "sub_name", "sub_id"])
+
+    n1 = rmv_factor_df["scenario"].nunique()
+    n2 = rmv_factor_df["sub_name"].nunique()
+    n3 = rmv_factor_df["sub_id"].nunique()
+    if not (n1 == n2 == n3):
+        color_factor = "scenario"
+    elif long_substance_name:
+        color_factor = "sub_name"
+    else:
+        color_factor = "sub_id"
+
+    plt.figure(
+        figsize=(8, 1.2 * len(sim_results) + 2))
+
+    axs = sns.violinplot(
         x="value", y="variable",
         data=rmv_factor_df,
-        hue="scenario",
+        hue=color_factor,
         cut=0,
         density_norm="width",
         inner=None,
         saturation=1,
         palette=color_palette,
         orient="h",
-        ax=axs[1],
         legend="brief" if len(sim_results) > 1 else False
     )
 
     if len(sim_results) > 1:
-        plt.setp(axs[1].get_legend().get_texts(), fontsize = font_size)
-        plt.setp(axs[1].get_legend().get_title(),fontsize = font_size)
-    ## Legen above the plot
-    # plt.setp(axs[1].legend(bbox_to_anchor=(0, 1.02, 1, 0.2), loc="lower left",
-    #            mode="expand", borderaxespad=0, ncol=3, fontsize = font_size))
-        plt.setp(axs[1].legend(loc="right", fontsize=font_size))
+        sns.move_legend(
+            axs,
+            "lower left",
+            bbox_to_anchor=(0, 1.02, 1, 0.2),
+            mode="expand",
+            borderaxespad=0,
+            ncol=3,
+            title=None,
+            fontsize=font_size,
+            title_fontsize=font_size,
+            frameon=True,
+            fancybox=False,
+            framealpha=1,
+            facecolor="white",
+            edgecolor="black",
+            borderpad=0.5
+        )
 
+    if no_mixture:
+        xstr = 'Removal factor in %'
+    else:
+        xstr = 'Reduction of concentration (removal or dilution) in %'
 
-    axs[1].set_title(substance_name + f" at CS: '{case_study_name}'" if case_study_name is not None else "")
-    axs[1].set_xlabel('Reduction of concentration (removal or dilution) in %', fontsize = font_size)
-    axs[1].set_ylabel('Treatment step outlet', fontsize = font_size)
-    plt.xticks(fontsize = font_size, rotation = 0)
-    plt.yticks(fontsize = font_size, rotation = 0)
+    axs.set_xlabel(xstr, fontsize=font_size)
+    axs.set_ylabel('', fontsize=font_size)
+    plt.xticks(fontsize=font_size, rotation=0)
+    plt.yticks(fontsize=font_size, rotation=0)
 
     left, right = plt.xlim()
     if left < -1000:
         axs[1].set_xlim(-1000, 150)
     if save_as is not None:
-        plt.savefig(save_as, dpi=300)
-    return fig
+        plt.savefig(save_as, dpi=300, bbox_inches = "tight")
+        plt.close()
 
 
 def spider_plot(
-        sim_results: list[SimulationResult],
+        assessment_results: list[MixtureAssessmentResult|AssessmentResult],
         case_study_name: str | None = None,
+        draw_legend: bool = True,
+        save_as: str | None = None
 ):
+    rq = []
+    sc_name = []
+    sub_name = []
+    for i, impact in enumerate(assessment_results):
+        if isinstance(impact, MixtureAssessmentResult):
+            rq += [impact.assessment]
+            sc_name += [impact.impact_mixture_scenario.name]
+            sub_name += [impact.impact_mixture_scenario.hazard_group.name]
+        else:
+            rq += [impact.assessment]
+            sc_name += [impact.impact_scenario.name]
+            sub_name += [impact.impact_scenario.exposure_result.exposure_scenario.substance.id]
 
-    rq = [r.final_concentration / r.scenario.reference.ref_value_ng_l for r in sim_results]
+    if case_study_name is not None and len(set(sub_name)) == len(set(sc_name)):
+        column_names = sub_name
+        title = case_study_name
+    else:
+        column_names = sc_name
+        title = ""
 
-    output_c_df = pd.DataFrame(np.column_stack(rq),
-                               columns=[
-                                   f"{case_study_name if case_study_name is not None else f'result {i}'}  {r.scenario.name}"
-                                   for i, r in enumerate(sim_results)]
-                               )
+    output_c_df = pd.DataFrame(
+        np.column_stack(rq),
+        columns = column_names
+    )
 
     percentiles = [0.50, 0.75, 0.95, 0.99]
     stats = output_c_df.describe(percentiles)
@@ -259,18 +314,20 @@ def spider_plot(
             ax.bar(angles[j], end_y_50, width=bar_width, bottom=start_y_50, facecolor=colors[4], alpha=1,
                    edgecolor='k')
 
-    title = "Reference quotient (RQ) percentiles in final media"
     fig.text(0.5, 0.98, title, fontsize=12, weight="bold", ha="center", va="center")
-    legend_elements = [
-        mpatches.Patch(color=colors[0], label='<= 0.1'),
-        mpatches.Patch(color=colors[1], label='0.1 < and <= 1'),
-        mpatches.Patch(color=colors[2], label='1 < and <= 5'),
-        mpatches.Patch(color=colors[3], label='5 < and <= 10'),
-        mpatches.Patch(color=colors[4], label='> 10'),
-    ]
+    if draw_legend:
+        legend_elements = [
+            mpatches.Patch(color=colors[0], label='<= 0.1'),
+            mpatches.Patch(color=colors[1], label='0.1 < and <= 1'),
+            mpatches.Patch(color=colors[2], label='1 < and <= 5'),
+            mpatches.Patch(color=colors[3], label='5 < and <= 10'),
+            mpatches.Patch(color=colors[4], label='> 10'),
+        ]
 
-    legend = ax.legend(handles=legend_elements, title='RQ ranges', bbox_to_anchor=(0.05, 1.), loc='upper right',
-                       fontsize=12, title_fontsize=12, frameon=False)
-    legend.get_title().set_fontweight('bold')
+        legend = ax.legend(handles=legend_elements, title='RQ ranges', bbox_to_anchor=(0.05, 1.), loc='upper right',
+                           fontsize=12, title_fontsize=12, frameon=False)
+        legend.get_title().set_fontweight('bold')
     plt.subplots_adjust(left=0.1, right=0.9, top=0.9, bottom=0.1)
-    return fig
+    if save_as is not None:
+        plt.savefig(save_as, dpi=300, bbox_inches="tight")
+        plt.close()
