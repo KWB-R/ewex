@@ -5,7 +5,6 @@ import ewex.models.reference as reference_model
 import ewex.models.starting_concentration as sc_model
 from ewex.models.hazard_group import Equivalence, HazardGroup
 
-
 class SubstanceGroup(Enum):
     PFAS = "PFAS"
     iPMT = "iPM(T)"
@@ -48,7 +47,6 @@ class Substance:
 
     def __hash__(self):
         return hash(self.id)
-
 
 
 class Substances:
@@ -148,3 +146,8 @@ class Substances:
     tea = Substance("tea", SubstanceGroup.iPMT, "Triethanolamine", "102-71-6")
     tn = Substance("tn", SubstanceGroup.Nutrient, "Total Nitrogen", "-")
     tp = Substance("tp", SubstanceGroup.Nutrient, "Total Phosphorus", "x")
+
+
+
+
+
